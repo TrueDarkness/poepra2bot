@@ -12,7 +12,7 @@ client.on('ready', async client => {
 client.on('message', message => {
     if (message.content === 'ping') {
        message.reply('pong!');
-       message.reply(message.member.user.presence.game);
+       message.reply(message.user.presence.game);
        
     }
 });
