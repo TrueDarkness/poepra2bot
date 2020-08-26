@@ -8,7 +8,7 @@ client.on('message', message => {
 });
 
 // Novos usuários, adicionar cargo "Online"
-client.on('guildMemberAdd', member => {
+client.on('guildMemberAdd', (member) => {
     member.addRole("670252571591573504"); // Online
 });
 
