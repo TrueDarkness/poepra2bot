@@ -13,7 +13,7 @@ client.on('guildMemberAdd', member => {
 
 // Mudança de Presença/Status
 client.on('presenceUpdate', (oldMember, newMember) => {
-    if ( newMember.bot )
+    if ( newMember.roles.find(r => rname === "Bot" )
         return false;
     n = newMember;
     g = "semjogo";
