@@ -12,7 +12,7 @@ client.on('ready', async client => {
 client.on('message', message => {
     if (message.content === 'ping') {
        message.reply('pong!');
-       message.author.addRole('671361855574245377');
+       message.member.addRole('671361855574245377');
     }
 });
 
