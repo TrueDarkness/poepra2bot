@@ -20,6 +20,7 @@ client.on('presenceUpdate', (oldMember, newMember) => {
     JogoCheck(n,g,"718659248132718694","Drox Operative","Drox Operative 2","","",""); // Agente Drox
     JogoCheck(n,g,"722591169670021200","Nine Parchments","","","",""); // Aprendiz de Feitiçaria
     JogoCheck(n,g,"671360952070832150","Relic Hunters Legend","","","",""); // Caçador de Relíquias
+    JogoCheck(n,g,"748228857789808833","Remnant: From the Ashes","","","",""); // Herói
     JogoCheck(n,g,"671361479349370890","Warframe","","","",""); // Tenno
     JogoCheck(n,g,"670075744252198962","The Division","The Division 2","","",""); // Agente da Divisão
     JogoCheck(n,g,"671361855574245377","Factorio","","","",""); // Engenheiro da Automação
@@ -46,7 +47,7 @@ client.on('presenceUpdate', (oldMember, newMember) => {
     JogoCheck(n,g,"672511452069888014","Grand Theft Auto V","","","",""); // Ladrão de Carro
     JogoCheck(n,g,"683821650516770820","Tibia","","","",""); // Tibiano
     JogoCheck(n,g,"699354042345717911","League of Legends","","","",""); // Invocador
-    JogoCheck(n,g,"720052612149280951","Rainbow Six Siege","","","",""); // Operador
+    JogoCheck(n,g,"720052612149280951","Rainbow Six Siege","","","",""); // Operador    
 });
 
 function JogoCheck(membroatual,jogoatual,rolejogo,nomejogo1,nomejogo2,nomejogo3,nomejogo4,nomejogo5) {
