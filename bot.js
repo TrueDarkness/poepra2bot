@@ -17,10 +17,11 @@ client.on('presenceUpdate', (oldMember, newMember) => {
     g = newMember.presence.game.name;
     JogoCheck(n,g,'718659248132718694','Drox Operative','Drox Operative2','','','');
     JogoCheck(n,g,'671361855574245377','Factorio','','','','');
+    JogoCheck(n,g,'722591169670021200','Nine Parchments','','','','');
 });
 
 function JogoCheck(membroatual,jogoatual,rolejogo,nomejogo1,nomejogo2,nomejogo3,nomejogo4,nomejogo5) {
-    if ( jogoatual === nomejogo )
+    if ( jogoatual === nomejogo1 || jogoatual === nomejogo2 || jogoatual === nomejogo3 || jogoatual === nomejogo4 || jogoatual === nomejogo5 )
         membroatual.addRole(rolejogo);
     else
         membroatual.removeRole(rolejogo);
