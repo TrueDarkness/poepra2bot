@@ -14,7 +14,7 @@ client.on('guildMemberAdd', (member) => {
 
 // Mudança de Presença/Status
 client.on('presenceUpdate', (oldMember, newMember) => {
-    if ( newMember.user.bot )
+    if ( newMember.user.bot || newMember.presence.clientStatus === 'mobile' || oldMember.presence.status !== newMember.presence.status )
         return;
     n = newMember;
     g = "semjogo";
