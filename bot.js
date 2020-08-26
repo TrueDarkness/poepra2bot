@@ -25,7 +25,10 @@ async function statuscheck() {
     await client.guilds.array().forEach(async g => {
         const status = [];
         await g.members.array().forEach(m => {
-            status.push(m.user.presence.game);
+            if (m.user.presence.game === "Factorio")
+                member.addRole(671361855574245377);
+            else
+                member.removeRole(671361855574245377);
         });
         statusArray[g.id] = status;
     });
