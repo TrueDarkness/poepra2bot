@@ -8,13 +8,13 @@ client.on('message', message => {
 });
 
 // Novos usuários, adicionar cargo "Online"
-client.on('guildMemberAdd', member => {
+client.on('guildMemberAdd', (member) => {
     member.addRole("670252571591573504"); // Online
 });
 
 // Mudança de Presença/Status
 client.on('presenceUpdate', (oldMember, newMember) => {
-    if ( newMember.roles.cache.has("668816921122308096") )
+    if ( newMember.user.bot )
         return;
     n = newMember;
     g = "semjogo";
