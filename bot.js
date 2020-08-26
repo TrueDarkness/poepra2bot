@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 client.on('message', message => {
     if (message.content === 'ping') {
-       message.reply('pong!2345');
+       message.reply('pong!23456');
     }
 });
 
@@ -15,7 +15,7 @@ client.on('guildMemberAdd', member => {
 client.on('presenceUpdate', (oldMember, newMember) => {
     n = newMember;
     g = newMember.presence.game.name;
-    JogoCheck(n,g,'718659248132718694','Drox Operative','Drox Operative2','','','');
+    JogoCheck(n,g,'718659248132718694','Drox Operative','Drox Operative 2','','','');
     JogoCheck(n,g,'671361855574245377','Factorio','','','','');
     JogoCheck(n,g,'722591169670021200','Nine Parchments','','','','');
 });
