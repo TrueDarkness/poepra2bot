@@ -45,7 +45,7 @@ client.on('presenceUpdate', (oldMember, newMember) => {
     JogoCheck(n,g,"671890582313893944","Warhammer 40,000: Inquisitor - Martyr","Warhammer 40,000: Inquisitor - Prophecy","","",""); // Insquisidor
     JogoCheck(n,g,"672511452069888014","Grand Theft Auto V","","","",""); // Ladrão de Carro
     JogoCheck(n,g,"683821650516770820","Tibia","","","",""); // Tibiano
-    JogoCheck(n,g,"699354042345717911","Leangue of Legends","","","",""); // Invocador
+    JogoCheck(n,g,"699354042345717911","League of Legends","","","",""); // Invocador
     JogoCheck(n,g,"720052612149280951","Rainbow Six Siege","","","",""); // Operador
 });
 
