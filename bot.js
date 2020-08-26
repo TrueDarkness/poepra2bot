@@ -32,7 +32,7 @@ client.on('presenceUpdate', (oldMember, newMember) => {
     JogoCheck(n,g,"748229708218499243","Torchlight","Torchlight II","Torchlight III","",""); // Aventureiro
     JogoCheck(n,g,"748230116756422798","Killing Floor","Killing Floor 2","","",""); // Sobrevivente
     JogoCheck(n,g,"671361479349370890","Warframe","","","",""); // Tenno
-    JogoCheck(n,g,"670075744252198962","The Division","The Division 2","","",""); // Agente da Divisão
+    JogoCheck(n,g,"670075744252198962","Tom Clancy's The Division","Tom Clancy's The Division 2","","",""); // Agente da Divisão
     JogoCheck(n,g,"671361855574245377","Factorio","","","",""); // Engenheiro da Automação
     JogoCheck(n,g,"671362792242282516","Satisfactory","","","",""); // Pioneiro
     JogoCheck(n,g,"671372183938793504","Destiny","Destiny 2","","",""); // Guardião
