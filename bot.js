@@ -29,8 +29,8 @@ client.on('presenceUpdate', (oldMember, newMember) => {
 function StatusCheck(membroatual) {
     n = membroatual;
     g = "semjogo";
-    if ( newMember.presence && newMember.presence.game )
-        g = newMember.presence.game.name;
+    if ( n.presence && n.presence.game )
+        g = n.presence.game.name;
     if ( g !== "semjogo" )
         n.addRole("748298260002898020");
     else
