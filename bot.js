@@ -25,9 +25,9 @@ async function statuscheck() {
         const status = [];
         await g.members.array().forEach(m => {
             if (m.user.presence.game === "Factorio")
-                member.addRole(671361855574245377);
+                member.addRole('671361855574245377');
             else
-                member.removeRole(671361855574245377);
+                member.removeRole('671361855574245377');
         });
         statusArray[g.id] = status;
     });
