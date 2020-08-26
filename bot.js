@@ -22,6 +22,7 @@ client.on('presenceUpdate', (oldMember, newMember) => {
     JogoCheck(n,g,"671360952070832150","Relic Hunters Legend","","","",""); // Caçador de Relíquias
     JogoCheck(n,g,"748228857789808833","Remnant: From the Ashes","","","",""); // Herói
     JogoCheck(n,g,"748231155953696809","Barony","","","",""); // Aventureiro
+    JogoCheck(n,g,"748231857073815582","20XX","30XX","","",""); // Contratado
     JogoCheck(n,g,"748229708218499243","Torchlight","Torchlight II","Torchlight III","",""); // Aventureiro
     JogoCheck(n,g,"748230116756422798","Killing Floor","Killing Floor 2","","",""); // Sobrevivente
     JogoCheck(n,g,"671361479349370890","Warframe","","","",""); // Tenno
