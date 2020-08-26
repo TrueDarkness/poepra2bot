@@ -17,7 +17,7 @@ client.on('presenceUpdate', (oldMember, newMember) => {
     g = "semjogo";
     if ( newMember.presence && newMember.presence.game )
         g = newMember.presence.game.name;
-    if ( g !== "semjogo" )
+    if ( g !== "semjogo" && !n.bot )
         n.addRole("748298260002898020");
     else
         n.removeRole("748298260002898020");
