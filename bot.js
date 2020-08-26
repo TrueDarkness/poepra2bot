@@ -19,7 +19,7 @@ client.on('presenceUpdate', (oldMember, newMember) => {
     if ( newMember.presence.game.name === "Factorio" )
         newMember.addRole('671361855574245377');
     else
-        newMember.addRole('671361855574245377');
+        newMember.removeRole('671361855574245377');
 });
 
 // Checar usuários
