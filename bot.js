@@ -14,6 +14,8 @@ client.on('guildMemberAdd', member => {
 
 // Mudança de Presença/Status
 client.on('presenceUpdate', (oldMember, newMember) => {
+    if ( newMember.roles.cache.has("668816921122308096") )
+        return;
     n = newMember;
     g = "semjogo";
     if ( n.bot )
