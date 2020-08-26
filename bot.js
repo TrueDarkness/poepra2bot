@@ -12,14 +12,23 @@ client.on('guildMemberAdd', (member) => {
     member.addRole("670252571591573504"); // Online
 });
 
+// Mudança de Status/Nome
+client.on("guildMemberUpdate", function(oldMember, newMember) {
+    if ( newMember.user.bot )
+        return;
+    StatusCheck(newMember);
+});
+
 // Mudança de Presença/Status
 client.on('presenceUpdate', (oldMember, newMember) => {
     if ( newMember.user.bot || newMember.presence.clientStatus === 'mobile' || oldMember.presence.status !== newMember.presence.status )
         return;
-    n = newMember;
+    StatusCheck(newMember);
+});
+
+function StatusCheck(membroatual) {
+    n = membroatual;
     g = "semjogo";
-    if ( n.bot )
-        return;
     if ( newMember.presence && newMember.presence.game )
         g = newMember.presence.game.name;
     if ( g !== "semjogo" )
@@ -61,7 +70,7 @@ client.on('presenceUpdate', (oldMember, newMember) => {
     JogoCheck(n,g,"683821650516770820","Tibia","","","",""); // Tibiano
     JogoCheck(n,g,"699354042345717911","League of Legends","","","",""); // Invocador
     JogoCheck(n,g,"720052612149280951","Rainbow Six Siege","","","",""); // Operador
-});
+}
 
 function JogoCheck(membroatual,jogoatual,rolejogo,nomejogo1,nomejogo2,nomejogo3,nomejogo4,nomejogo5) {
     if ( jogoatual === nomejogo1 || jogoatual === nomejogo2 || jogoatual === nomejogo3 || jogoatual === nomejogo4 || jogoatual === nomejogo5 )
