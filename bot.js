@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 client.on('message', message => {
     if (message.content === 'ping') {
-       message.reply('pong!234567');
+       message.reply('pong!x');
     }
 });
 
@@ -17,9 +17,9 @@ client.on('presenceUpdate', (oldMember, newMember) => {
     g = "semjogo";
     if ( newMember.presence && newMember.presence.game )
         g = newMember.presence.game.name;
-    JogoCheck(n,g,"718659248132718694","Drox Operative","Drox Operative 2","","",""); ' Agente Drox
-    JogoCheck(n,g,"722591169670021200","Nine Parchments","","","",""); ' Aprendiz de Feitiçaria
-    JogoCheck(n,g,"671360952070832150","Relic Hunters Legend","","","",""); ' Caçador de Relíquias
+    JogoCheck(n,g,"718659248132718694","Drox Operative","Drox Operative 2","","",""); // Agente Drox
+    JogoCheck(n,g,"722591169670021200","Nine Parchments","","","",""); // Aprendiz de Feitiçaria
+    JogoCheck(n,g,"671360952070832150","Relic Hunters Legend","","","",""); // Caçador de Relíquias
 });
 
 function JogoCheck(membroatual,jogoatual,rolejogo,nomejogo1,nomejogo2,nomejogo3,nomejogo4,nomejogo5) {
