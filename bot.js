@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 client.on('message', message => {
     if (message.content === 'ping') {
-       message.reply('pong!23');
+       message.reply('pong!234');
     }
 });
 
@@ -15,7 +15,7 @@ client.on('guildMemberAdd', member => {
 client.on('presenceUpdate', (oldMember, newMember) => {
     n = newMember;
     g = newMember.presence.game.name;
-    JogoCheck(n,g,"Factorio",671361855574245377);
+    JogoCheck(n,g,'Factorio','671361855574245377');
 });
 
 function JogoCheck(membroatual,jogoatual,nomejogo,rolejogo) {
