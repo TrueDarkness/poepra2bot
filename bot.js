@@ -15,14 +15,18 @@ client.on('guildMemberAdd', member => {
 client.on('presenceUpdate', (oldMember, newMember) => {
     n = newMember;
     g = newMember.presence.game.name;
+    r = "";
+    JogoCheck(n,g,'Drox Operative','718659248132718694');
+    JogoCheck(n,g,'Drox Operative 2','718659248132718694');
     JogoCheck(n,g,'Factorio','671361855574245377');
+    if ( r != "" )
+        n.addRole(r);
 });
 
 function JogoCheck(membroatual,jogoatual,nomejogo,rolejogo) {
     if ( jogoatual === nomejogo )
-        membroatual.addRole(rolejogo);
-    else
-        membroatual.removeRole(rolejogo);
+        r = rolejogo;
+    membroatual.removeRole(rolejogo);
 }
 
 client.login(process.env.BOT_TOKEN);//BOT_TOKEN is the Client Secret
