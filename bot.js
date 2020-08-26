@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 client.on('message', message => {
     if (message.content === 'ping') {
-       message.reply('pong!234');
+       message.reply('pong!2345');
     }
 });
 
@@ -15,18 +15,15 @@ client.on('guildMemberAdd', member => {
 client.on('presenceUpdate', (oldMember, newMember) => {
     n = newMember;
     g = newMember.presence.game.name;
-    r = "";
-    JogoCheck(n,g,'Drox Operative','718659248132718694');
-    JogoCheck(n,g,'Drox Operative 2','718659248132718694');
-    JogoCheck(n,g,'Factorio','671361855574245377');
-    if ( r != "" )
-        n.addRole(r);
+    JogoCheck(n,g,'718659248132718694','Drox Operative','Drox Operative2','','','');
+    JogoCheck(n,g,'671361855574245377','Factorio','','','','');
 });
 
-function JogoCheck(membroatual,jogoatual,nomejogo,rolejogo) {
+function JogoCheck(membroatual,jogoatual,rolejogo,nomejogo1,nomejogo2,nomejogo3,nomejogo4,nomejogo5) {
     if ( jogoatual === nomejogo )
-        r = rolejogo;
-    membroatual.removeRole(rolejogo);
+        membroatual.addRole(rolejogo);
+    else
+        membroatual.removeRole(rolejogo);
 }
 
 client.login(process.env.BOT_TOKEN);//BOT_TOKEN is the Client Secret
