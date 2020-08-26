@@ -3,12 +3,13 @@ const client = new Discord.Client();
 
 client.on('message', message => {
     if (message.content === 'ping') {
-       message.reply('pong!x');
+       message.reply('pong!!!');
     }
 });
 
 // Novos usuários, adicionar cargo "Online"
 client.on('guildMemberAdd', member => {
+    member.addRole("670252571591573504"); // Online
 });
 
 // Mudança de Presença/Status
