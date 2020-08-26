@@ -1,10 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-client.on('ready', () => {
-    console.log('I am ready!');
-});
-
 client.on('ready', async client => {
     setInterval(await statuscheck(client), 10000); // Checar usuários a cada 10 segundos
 });
@@ -12,8 +8,6 @@ client.on('ready', async client => {
 client.on('message', message => {
     if (message.content === 'ping') {
        message.reply('pong!2');
-      if (message.member.presence.game.name)
-          message.reply(message.member.presence.game.name);
     }
 });
 
@@ -28,9 +22,9 @@ async function statuscheck() {
         const status = [];
         await g.members.array().forEach(m => {
             if (m.user.presence.game === "Factorio")
-                member.addRole('671361855574245377');
+                m.addRole('671361855574245377');
             else
-                member.removeRole('671361855574245377');
+                m.removeRole('671361855574245377');
         });
         statusArray[g.id] = status;
     });
