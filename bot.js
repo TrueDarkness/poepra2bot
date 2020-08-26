@@ -13,10 +13,10 @@ client.on('guildMemberAdd', member => {
 
 // Mudança de Presença/Status
 client.on('presenceUpdate', (oldMember, newMember) => {
+    if ( newMember.bot )
+        return false;
     n = newMember;
     g = "semjogo";
-    if ( n.bot )
-        return;
     if ( newMember.presence && newMember.presence.game )
         g = newMember.presence.game.name;
     if ( g !== "semjogo" )
