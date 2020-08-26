@@ -12,8 +12,8 @@ client.on('ready', async client => {
 client.on('message', message => {
     if (message.content === 'ping') {
        message.reply('pong!2');
-      if (message.member.user.presence.game.name)
-          message.reply(message.member.user.presence.game.name);
+      if (message.member.presence.game.name)
+          message.reply(message.member.presence.game.name);
     }
 });
 
