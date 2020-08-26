@@ -9,6 +9,9 @@ client.on('message', message => {
 
 // Novos usuários, adicionar cargo "Online"
 client.on('guildMemberAdd', member => {
+    if ( member.roles.find(r => rname === "Bot" )
+        return false;
+    member.addRole("670252571591573504"); // Online
 });
 
 // Mudança de Presença/Status
