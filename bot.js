@@ -15,9 +15,11 @@ client.on('guildMemberAdd', member => {
 client.on('presenceUpdate', (oldMember, newMember) => {
     n = newMember;
     g = "semjogo";
+    if ( n.bot )
+        return;
     if ( newMember.presence && newMember.presence.game )
         g = newMember.presence.game.name;
-    if ( g !== "semjogo" && !n.bot )
+    if ( g !== "semjogo" )
         n.addRole("748298260002898020");
     else
         n.removeRole("748298260002898020");
