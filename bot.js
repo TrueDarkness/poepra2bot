@@ -15,15 +15,24 @@ client.on('message', message => {
 client.on('guildMemberAdd', member => {
 });
 
+client.on('presenceUpdate', (oldMember, newMember) => {
+    if ( newMember.presence.game.name === "Factorio" )
+        newMember.addRole('671361855574245377');
+    else
+        newMember.addRole('671361855574245377');
+});
+
 // Checar usuários
 async function statuscheck() {
     const statusArray = {};
     await client.guilds.array().forEach(async g => {
         const status = [];
         await g.members.array().forEach(m => {
-            if (m.user.presence && m.user.presence.game && m.user.presence.game.name === "Factorio")
+            if (m.user.presence.game.name === "Factorio")
+                
                 m.addRole('671361855574245377');
             else
+                m.addRole('671361855574245377');
                 m.removeRole('671361855574245377');
         });
         statusArray[g.id] = status;
