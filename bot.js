@@ -42,6 +42,12 @@ function StatusCheck(n,g) {
                 m = m+" GN:"+p.game.name;
             if ( p.game.assets )
                 m = m+" GA:"+p.game.assets;
+            if ( p.game.details )
+                m = m+" GD:"+p.game.details;
+            if ( p.game.details )
+                m = m+" GD:"+p.game.details;
+            if ( p.game.url )
+                m = m+" GU:"+p.game.url;
         }
         client.channels.get("743855267409821698").send(m);
     }
