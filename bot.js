@@ -2,27 +2,27 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('message', message => {
-    if (message.content === 'ping') {
-       message.reply('pong!!!!!');
-    }
+	if (message.content === 'ping') {
+		message.reply('pong!!!!!');
+	}
 });
 
 // Novos usuários, adicionar cargo "Online"
 client.on('guildMemberAdd', (member) => {
-    member.addRole("670252571591573504"); // Online
+	member.addRole("670252571591573504"); // Online
 });
 
 // Mudança de Presença/Status
 client.on('presenceUpdate', (oldMember, newMember) => {
-    //if ( newMember.user.bot || newMember.presence.clientStatus === 'mobile' || oldMember.presence.status !== newMember.presence.status )
-    if ( newMember.user.bot )
-        return;
-    g = "semjogo";
-    if ( newMember.presence && newMember.presence.game )
-        g = newMember.presence.game.name;
-    //if ( g == "Custom Status" )
-        //g = "semjogo";
-    StatusCheck(newMember,g);
+	//if ( newMember.user.bot || newMember.presence.clientStatus === 'mobile' || oldMember.presence.status !== newMember.presence.status )
+	if ( newMember.user.bot )
+		return;
+	g = "semjogo";
+	if ( newMember.presence && newMember.presence.game )
+		g = newMember.presence.game.name;
+	//if ( g == "Custom Status" )
+		//g = "semjogo";
+	StatusCheck(newMember,g);
 });
 
 function StatusCheck(n,g) {
