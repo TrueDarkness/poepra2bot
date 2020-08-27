@@ -14,14 +14,13 @@ client.on('guildMemberAdd', (member) => {
 
 // Mudança de Presença/Status
 client.on('presenceUpdate', (oldPresence, newPresence) => {
-    //if ( newMember.user.bot || newMember.presence.clientStatus === 'mobile' || oldMember.presence.status !== newMember.presence.status )
     if ( newPresence.user.bot )
         return;
     g = "semjogo";
     if (newPresence.activities) {
         newPresence.activities.forEach(activity => {
-            if ( activity.type === "Playing" )
-                g = activity.name;
+            //if ( activity.type === "Playing" )
+            //    g = activity.name;
         });
     }
     StatusCheck(newPresence.member,g);
