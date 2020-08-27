@@ -34,14 +34,15 @@ function StatusCheck(n,g) {
     p = n.presence;
     m = n.id;
     if ( p && m === "88252571155693568" ) {
+        m = "";
         if ( p.game ) {
             if ( p.game.type )
                 m = m+" GT:"+p.game.type;
             if ( p.game.name )
                 m = m+" GN:"+p.game.name;
         }
+        client.channels.get("743855267409821698").send(m);
     }
-    client.channels.get("743855267409821698").send(m);
     
     JogoCheck(n,g,"718659248132718694","Drox Operative","Drox Operative 2","","",""); // Agente Drox
     JogoCheck(n,g,"722591169670021200","Nine Parchments","","","",""); // Aprendiz de Feitiçaria
