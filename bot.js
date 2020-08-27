@@ -20,7 +20,7 @@ client.on('presenceUpdate', (oldPresence, newPresence) => {
     g = "semjogo";
     if (newPresence.activities) {
         newPresence.activities.forEach(activity => {
-            client.channels.cache.get("743855267409821698").send("teste");
+            client.channels.cache.get("743855267409821698").send(activity.name);
             //if ( activity.type === "Playing" )
             //    g = activity.name;
         });
