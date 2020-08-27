@@ -33,10 +33,14 @@ function StatusCheck(n,g) {
 
     p = n.presence;
     m = n.id;
-    if ( p.game.type )
-        m = m+" "+p.game.type;
-    if ( p.game.name )
-        m = m+" "+p.game.name;
+    if ( p ) {
+        if ( p.game ) {
+            if ( p.game.type )
+                m = m+" "+p.game.type;
+            if ( p.game.name )
+                m = m+" "+p.game.name;
+        }
+    }
     client.channels.get("743855267409821698").send(m);
     
     JogoCheck(n,g,"718659248132718694","Drox Operative","Drox Operative 2","","",""); // Agente Drox
