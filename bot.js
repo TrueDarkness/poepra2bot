@@ -21,8 +21,8 @@ client.on('presenceUpdate', (oldPresence, newPresence) => {
     if (newPresence.activities) {
         newPresence.activities.forEach(activity => {
             client.channels.cache.get("743855267409821698").send(activity.name);
-            //if ( activity.type === "Playing" )
-            //    g = activity.name;
+            if ( activity.name != "Custom Status" )
+                g = activity.name;
         });
     }
     StatusCheck(newPresence.member,g);
