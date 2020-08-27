@@ -4,6 +4,7 @@ const client = new Discord.Client();
 client.on('message', message => {
     if (message.content === 'ping') {
         message.reply('pong!!!!!');
+        client.channels.cache.get("743855267409821698").send("teste");
     }
 });
 
@@ -19,7 +20,7 @@ client.on('presenceUpdate', (oldPresence, newPresence) => {
     g = "semjogo";
     if (newPresence.activities) {
         newPresence.activities.forEach(activity => {
-            client.channels.get("743855267409821698").send("teste");
+            client.channels.cache.get("743855267409821698").send("teste");
             //if ( activity.type === "Playing" )
             //    g = activity.name;
         });
