@@ -18,11 +18,12 @@ client.on('presenceUpdate', (oldPresence, newPresence) => {
     if ( newPresence.user.bot )
         return;
     g = "semjogo";
-    client.channels.get("743855267409821698").send("oi");
-    if ( newPresence && newPresence.activity[0] )
-        g = newPresence.activity[0].name;
+//    client.channels.get("743855267409821698").send("oi");
+    //if ( newPresence && newPresence.activity[0] )
+//        g = newPresence.activity[0].name;
 //    if ( g == "Custom Status" && newMember.presence.game.type != "0" )
 //        g = "semjogo";
+    g = "oi";
     StatusCheck(newPresence.user,g);
 });
 
