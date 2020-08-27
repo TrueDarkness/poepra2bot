@@ -33,12 +33,12 @@ function StatusCheck(n,g) {
 
     p = n.presence;
     m = n.id;
-    if ( p ) {
+    if ( p && m === "88252571155693568" ) {
         if ( p.game ) {
             if ( p.game.type )
-                m = m+" "+p.game.type;
+                m = m+" GT:"+p.game.type;
             if ( p.game.name )
-                m = m+" "+p.game.name;
+                m = m+" GN:"+p.game.name;
         }
     }
     client.channels.get("743855267409821698").send(m);
