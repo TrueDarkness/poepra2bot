@@ -18,6 +18,28 @@ client.on('presenceUpdate', (oldMember, newMember) => {
     if ( newMember.user.bot )
         return;
     g = "semjogo";
+
+    p = newMember.presence;
+    m = newMember.id;
+    if ( p && m === "88252571155693568" ) {
+        m = "";
+        if ( p.activities[0] ) {
+            if ( p.activities[0].type )
+                m = m+" GT:"+p.activities[0].type;
+            if ( p.activities[0].name )
+                m = m+" GN:"+p.activities[0].name;
+            if ( p.activities[0].assets )
+                m = m+" GA:"+p.activities[0].assets;
+            if ( p.activities[0].details )
+                m = m+" GD:"+p.activities[0].details;
+            if ( p.activities[0].details )
+                m = m+" GD:"+p.activities[0].details;
+            if ( p.activities[0].url )
+                m = m+" GU:"+p.activities[0].url;
+        }
+        client.channels.get("743855267409821698").send(m);
+    }
+    
     if ( newMember.presence && newMember.presence.game )
         g = newMember.presence.game.name;
     if ( g == "Custom Status" && newMember.presence.game.type != "0" )
