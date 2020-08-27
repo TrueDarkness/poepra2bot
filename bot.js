@@ -24,7 +24,11 @@ client.on('presenceUpdate', (oldPresence, newPresence) => {
 //    if ( g == "Custom Status" && newMember.presence.game.type != "0" )
 //        g = "semjogo";
     g = "oi";
-    StatusCheck(newPresence.user,g);
+    if ( g !== "semjogo" )
+        n.roles.add("748298260002898020");
+    else
+        n.roles.remove("748298260002898020");
+//    StatusCheck(newPresence.user,g);
 });
 
 function StatusCheck(n,g) {
