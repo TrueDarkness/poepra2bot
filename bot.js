@@ -4,13 +4,13 @@ const client = new Discord.Client();
 client.on('message', message => {
     if (message.content === 'ping') {
 //        message.reply('pong!!!!!');
-    p = message.author.presence;
-    m = message.author.name;
-    if ( p.game.type )
-        m += " "+p.game.type;
-    if ( p.game.name )
-        m += " "+p.game.name;
-    client.channels.get("743855267409821698").send(m);
+        p = message.author.presence;
+        m = message.author.name;
+        if ( p.game.type )
+            m = m+" "+p.game.type;
+        if ( p.game.name )
+            m = m+" "+p.game.name;
+        client.channels.get("743855267409821698").send(m);
     }
 });
 
