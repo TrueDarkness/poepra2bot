@@ -3,8 +3,7 @@ const client = new Discord.Client();
 
 client.on('message', message => {
     if (message.content === 'ping') {
-       message.reply('pong!!!');
-       client.channels.get("743855267409821698").send('My Message');
+       message.reply('pong!!!!!');
     }
 });
 
@@ -38,6 +37,7 @@ function StatusCheck(n,g) {
         n.addRole("748298260002898020");
     else
         n.removeRole("748298260002898020");
+    client.channels.get("743855267409821698").send(g);
     //client.channels.cache.get('743855267409821698').send('Hello here!')
     JogoCheck(n,g,"718659248132718694","Drox Operative","Drox Operative 2","","",""); // Agente Drox
     JogoCheck(n,g,"722591169670021200","Nine Parchments","","","",""); // Aprendiz de Feitiçaria
