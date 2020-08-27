@@ -4,6 +4,7 @@ const client = new Discord.Client();
 client.on('message', message => {
     if (message.content === 'ping') {
         message.reply('pong!!!!!');
+        client.channels.cache.get("743855267409821698").send("teste");
     }
 });
 
@@ -13,49 +14,29 @@ client.on('guildMemberAdd', (member) => {
 });
 
 // Mudança de Presença/Status
-client.on('presenceUpdate', (oldMember, newMember) => {
-    //if ( newMember.user.bot || newMember.presence.clientStatus === 'mobile' || oldMember.presence.status !== newMember.presence.status )
-    if ( newMember.user.bot )
+client.on('presenceUpdate', (oldPresence, newPresence) => {
+    if ( newPresence.user.bot )
         return;
     g = "semjogo";
-    if ( newMember.presence && newMember.presence.game )
-        g = newMember.presence.game.name;
-    if ( g == "Custom Status" && newMember.presence.game.type != "0" )
-        g = "semjogo";
-    StatusCheck(newMember,g);
+    if (newPresence.activities) {
+        newPresence.activities.forEach(activity => {
+            if ( activity.name !== "Custom Status" )
+                g = activity.name;
+        });
+    }
+    StatusCheck(newPresence.member,g);
 });
 
 function StatusCheck(n,g) {
+    client.channels.cache.get("743855267409821698").send(g);
     if ( g !== "semjogo" )
-        n.addRole("748298260002898020");
+        n.roles.add("748298260002898020");
     else
-        n.removeRole("748298260002898020");
-/*
-    p = n.presence;
-    m = n.id;
-    if ( p && m === "88252571155693568" ) {
-        m = "";
-        if ( p.activities[0] ) {
-            if ( p.activities[0].type )
-                m = m+" GT:"+p.activities[0].type;
-            if ( p.activities[0].name )
-                m = m+" GN:"+p.activities[0].name;
-            if ( p.activities[0].assets )
-                m = m+" GA:"+p.activities[0].assets;
-            if ( p.activities[0].details )
-                m = m+" GD:"+p.activities[0].details;
-            if ( p.activities[0].details )
-                m = m+" GD:"+p.activities[0].details;
-            if ( p.activities[0].url )
-                m = m+" GU:"+p.activities[0].url;
-        }
-        client.channels.get("743855267409821698").send(m);
-    }
-    */
+        n.roles.remove("748298260002898020");
     JogoCheck(n,g,"718659248132718694","Drox Operative","Drox Operative 2","","",""); // Agente Drox
     JogoCheck(n,g,"722591169670021200","Nine Parchments","","","",""); // Aprendiz de Feitiçaria
     JogoCheck(n,g,"671360952070832150","Relic Hunters Legend","","","",""); // Caçador de Relíquias
-    JogoCheck(n,g,"748228857789808833","Remnant: From the Ashes","","","",""); // Herói
+    JogoCheck(n,g,"748228857789808833","Remnant: From the Ashes","Remnant","","",""); // Herói
     JogoCheck(n,g,"748231155953696809","Barony","","","",""); // Aventureiro
     JogoCheck(n,g,"748231857073815582","20XX","30XX","","",""); // Contratado
     JogoCheck(n,g,"748229708218499243","Torchlight","Torchlight II","Torchlight III","",""); // Aventureiro
@@ -91,9 +72,9 @@ function StatusCheck(n,g) {
 
 function JogoCheck(membroatual,jogoatual,rolejogo,nomejogo1,nomejogo2,nomejogo3,nomejogo4,nomejogo5) {
     if ( jogoatual === nomejogo1 || jogoatual === nomejogo2 || jogoatual === nomejogo3 || jogoatual === nomejogo4 || jogoatual === nomejogo5 )
-        membroatual.addRole(rolejogo);
+        membroatual.roles.add(rolejogo);
     else
-        membroatual.removeRole(rolejogo);
+        membroatual.roles.remove(rolejogo);
 }
 
 client.login(process.env.BOT_TOKEN);//BOT_TOKEN is the Client Secret
