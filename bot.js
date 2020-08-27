@@ -12,8 +12,8 @@ client.on('guildMemberAdd', (member) => {
     member.addRole("670252571591573504"); // Online
 });
 
-// Mudança de Status/Nome
-client.on("guildMemberUpdate", function(oldMember, newMember) {
+// Ficou online?
+client.on("guildMemberAvailable", function(newMember) {
     if ( newMember.user.bot )
         return;
     g = "semjogo";
