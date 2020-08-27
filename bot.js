@@ -6,10 +6,10 @@ client.on('message', message => {
 //        message.reply('pong!!!!!');
     p = message.author.presence;
     m = message.author.name;
-    if ( message.author.presence.game.type )
-        m += " "+message.author.presence.game.type;
-    if ( message.author.presence.game.name )
-        m += " "+message.author.presence.game.name;
+    if ( p.game.type )
+        m += " "+p.game.type;
+    if ( p.game.name )
+        m += " "+p.game.name;
     client.channels.get("743855267409821698").send(m);
     }
 });
