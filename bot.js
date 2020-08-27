@@ -18,46 +18,20 @@ client.on('presenceUpdate', (oldPresence, newPresence) => {
     if ( newPresence.user.bot )
         return;
     g = "semjogo";
-//    client.channels.get("743855267409821698").send("oi");
-    //if ( newPresence && newPresence.activity[0] )
-//        g = newPresence.activity[0].name;
-//    if ( g == "Custom Status" && newMember.presence.game.type != "0" )
-//        g = "semjogo";
-    g = "oi";
-    if ( g !== "semjogo" )
-        newPresence.member.roles.add("748298260002898020");
-    else
-        newPresence.member.roles.remove("748298260002898020");
-//    StatusCheck(newPresence.member,g);
+    if (newPresence.activities) {
+        newPresence.activities.forEach(activity => {
+            if ( activity.name !== "Custom Status" )
+                g = activity.name;
+        });
+    }
+    StatusCheck(newPresence.member,g);
 });
 
 function StatusCheck(n,g) {
     if ( g !== "semjogo" )
-        n.addRole("748298260002898020");
+        n.roles.add("748298260002898020");
     else
-        n.removeRole("748298260002898020");
-/*
-    p = n.presence;
-    m = n.id;
-    if ( p && m === "88252571155693568" ) {
-        m = "";
-        if ( p.activities[0] ) {
-            if ( p.activities[0].type )
-                m = m+" GT:"+p.activities[0].type;
-            if ( p.activities[0].name )
-                m = m+" GN:"+p.activities[0].name;
-            if ( p.activities[0].assets )
-                m = m+" GA:"+p.activities[0].assets;
-            if ( p.activities[0].details )
-                m = m+" GD:"+p.activities[0].details;
-            if ( p.activities[0].details )
-                m = m+" GD:"+p.activities[0].details;
-            if ( p.activities[0].url )
-                m = m+" GU:"+p.activities[0].url;
-        }
-        client.channels.get("743855267409821698").send(m);
-    }
-    */
+        n.roles.remove("748298260002898020");
     JogoCheck(n,g,"718659248132718694","Drox Operative","Drox Operative 2","","",""); // Agente Drox
     JogoCheck(n,g,"722591169670021200","Nine Parchments","","","",""); // Aprendiz de Feitiçaria
     JogoCheck(n,g,"671360952070832150","Relic Hunters Legend","","","",""); // Caçador de Relíquias
@@ -97,9 +71,9 @@ function StatusCheck(n,g) {
 
 function JogoCheck(membroatual,jogoatual,rolejogo,nomejogo1,nomejogo2,nomejogo3,nomejogo4,nomejogo5) {
     if ( jogoatual === nomejogo1 || jogoatual === nomejogo2 || jogoatual === nomejogo3 || jogoatual === nomejogo4 || jogoatual === nomejogo5 )
-        membroatual.addRole(rolejogo);
+        membroatual.roles.add(rolejogo);
     else
-        membroatual.removeRole(rolejogo);
+        membroatual.roles.remove(rolejogo);
 }
 
 client.login(process.env.BOT_TOKEN);//BOT_TOKEN is the Client Secret
