@@ -3,14 +3,7 @@ const client = new Discord.Client();
 
 client.on('message', message => {
     if (message.content === 'ping') {
-//        message.reply('pong!!!!!');
-        p = message.author.presence;
-        m = message.author.id;
-        if ( p.game.type )
-            m = m+" "+p.game.type;
-        if ( p.game.name )
-            m = m+" "+p.game.name;
-        client.channels.get("743855267409821698").send(m);
+        message.reply('pong!!!!!');
     }
 });
 
@@ -37,7 +30,15 @@ function StatusCheck(n,g) {
         n.addRole("748298260002898020");
     else
         n.removeRole("748298260002898020");
-//    client.channels.get("743855267409821698").send(n.presence.game.name+" "+n.presence.game.type+" "+n.presence.game.url+" "+n.presence.game.application_id);
+
+    p = n.presence;
+    m = n.id;
+    if ( p.game.type )
+        m = m+" "+p.game.type;
+    if ( p.game.name )
+        m = m+" "+p.game.name;
+    client.channels.get("743855267409821698").send(m);
+    
     JogoCheck(n,g,"718659248132718694","Drox Operative","Drox Operative 2","","",""); // Agente Drox
     JogoCheck(n,g,"722591169670021200","Nine Parchments","","","",""); // Aprendiz de Feitiçaria
     JogoCheck(n,g,"671360952070832150","Relic Hunters Legend","","","",""); // Caçador de Relíquias
