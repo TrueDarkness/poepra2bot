@@ -82,11 +82,9 @@ function StatusCheck(n,g) {
     JogoCheck(n,g,"671481819627126784","Path of Exile","Path of Exile 2","","",""); // Exilado
     JogoCheck(n,g,"721504174352629832","Dark Souls","Dark Souls Remastered","Dark Souls 2","Dark Souls 3",""); // Senhor das Cinzas
     JogoCheck(n,g,"671481817982959637","Human Fall Flat","","","",""); // Herói Cambaleante
-    JogoCheck(n,g,"671890582313893944","Warhammer 40,000: Inquisitor - Martyr","Warhammer 40,000: Inquisitor - Prophecy","","",""); // Insquisidor
+    JogoCheck(n,g,"671890582313893944","Warhammer 40,000: Inquisitor - Martyr","Warhammer 40,000: Inquisitor - Prophecy","","",""); // Inquisidor
     JogoCheck(n,g,"672511452069888014","Grand Theft Auto V","","","",""); // Ladrão de Carro
     JogoCheck(n,g,"683821650516770820","Tibia","","","",""); // Tibiano
-    JogoCheck(n,g,"699354042345717911","League of Legends","","","",""); // Invocador
-    JogoCheck(n,g,"720052612149280951","Tom Clancy's Rainbow Six Siege","Rainbow Six Siege","","",""); // Operador
 }
 
 function JogoCheck(membroatual,jogoatual,rolejogo,nomejogo1,nomejogo2,nomejogo3,nomejogo4,nomejogo5) {
