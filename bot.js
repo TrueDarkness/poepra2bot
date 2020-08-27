@@ -20,7 +20,7 @@ client.on('presenceUpdate', (oldPresence, newPresence) => {
     g = "semjogo";
     if (newPresence.activities) {
         newPresence.activities.forEach(activity => {
-            if ( activity.name !== "Custom Status" )
+            if ( activity.type === "Playing" )
                 g = activity.name;
         });
     }
