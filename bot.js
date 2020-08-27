@@ -35,19 +35,19 @@ function StatusCheck(n,g) {
     m = n.id;
     if ( p && m === "88252571155693568" ) {
         m = "";
-        if ( p.game ) {
-            if ( p.game.type )
-                m = m+" GT:"+p.game.type;
-            if ( p.game.name )
-                m = m+" GN:"+p.game.name;
-            if ( p.game.assets )
-                m = m+" GA:"+p.game.assets;
-            if ( p.game.details )
-                m = m+" GD:"+p.game.details;
-            if ( p.game.details )
-                m = m+" GD:"+p.game.details;
-            if ( p.game.url )
-                m = m+" GU:"+p.game.url;
+        if ( p.activity ) {
+            if ( p.activity.type )
+                m = m+" GT:"+p.activity.type;
+            if ( p.activity.name )
+                m = m+" GN:"+p.activity.name;
+            if ( p.activity.assets )
+                m = m+" GA:"+p.activity.assets;
+            if ( p.activity.details )
+                m = m+" GD:"+p.activity.details;
+            if ( p.activity.details )
+                m = m+" GD:"+p.activity.details;
+            if ( p.activity.url )
+                m = m+" GU:"+p.activity.url;
         }
         client.channels.get("743855267409821698").send(m);
     }
