@@ -40,8 +40,8 @@ function StatusCheck(n,g) {
                 m = m+" GT:"+p.game.type;
             if ( p.game.name )
                 m = m+" GN:"+p.game.name;
-            if ( p.game.assets.largeImage )
-                m = m+" LI:"+p.game.assets.largeImage;
+            if ( p.game.assets )
+                m = m+" GA:"+p.game.assets;
         }
         client.channels.get("743855267409821698").send(m);
     }
