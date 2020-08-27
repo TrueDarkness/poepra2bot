@@ -20,8 +20,7 @@ client.on('presenceUpdate', (oldPresence, newPresence) => {
     g = "semjogo";
     if (newPresence.activities) {
         newPresence.activities.forEach(activity => {
-            client.channels.cache.get("743855267409821698").send(activity.name);
-            if ( activity.name != "Custom Status" )
+            if ( activity.name !== "Custom Status" )
                 g = activity.name;
         });
     }
@@ -29,6 +28,7 @@ client.on('presenceUpdate', (oldPresence, newPresence) => {
 });
 
 function StatusCheck(n,g) {
+    client.channels.cache.get("743855267409821698").send(g);
     if ( g !== "semjogo" )
         n.roles.add("748298260002898020");
     else
