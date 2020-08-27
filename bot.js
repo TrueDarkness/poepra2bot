@@ -12,21 +12,10 @@ client.on('guildMemberAdd', (member) => {
     member.addRole("670252571591573504"); // Online
 });
 
-// Ficou online?
-client.on("guildMemberAvailable", function(newMember) {
-    if ( newMember.user.bot )
-        return;
-    g = "semjogo";
-    if ( newMember.presence && newMember.presence.game )
-        g = newMember.presence.game.name;
-    if ( g == "Custom Status" )
-        g = "semjogo";
-    StatusCheck(newMember,g);
-});
-
 // Mudança de Presença/Status
 client.on('presenceUpdate', (oldMember, newMember) => {
-    if ( newMember.user.bot || newMember.presence.clientStatus === 'mobile' || oldMember.presence.status !== newMember.presence.status )
+    //if ( newMember.user.bot || newMember.presence.clientStatus === 'mobile' || oldMember.presence.status !== newMember.presence.status )
+    if ( newMember.user.bot )
         return;
     g = "semjogo";
     if ( newMember.presence && newMember.presence.game )
@@ -41,8 +30,7 @@ function StatusCheck(n,g) {
         n.addRole("748298260002898020");
     else
         n.removeRole("748298260002898020");
-    client.channels.get("743855267409821698").send(g);
-    //client.channels.cache.get('743855267409821698').send('Hello here!')
+//    client.channels.get("743855267409821698").send(g);
     JogoCheck(n,g,"718659248132718694","Drox Operative","Drox Operative 2","","",""); // Agente Drox
     JogoCheck(n,g,"722591169670021200","Nine Parchments","","","",""); // Aprendiz de Feitiçaria
     JogoCheck(n,g,"671360952070832150","Relic Hunters Legend","","","",""); // Caçador de Relíquias
