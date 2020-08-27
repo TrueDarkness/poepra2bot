@@ -69,7 +69,6 @@ function StatusCheck(n,g) {
     JogoCheck(n,g,"671361756354052107","Monster Hunter World","","","",""); // Caçador de Monstros
     JogoCheck(n,g,"671890580690960429","Wolcen","","","",""); // Ascendido
     JogoCheck(n,g,"705922926087503883","Diablo","Diablo 2","Diablo 3","Diablo 4",""); // Nefalem
-    JogoCheck(n,g,"671361568553828352","World of Warcraft","","","",""); // Cidadão de Azeroth
     JogoCheck(n,g,"671363254945054720","Borderlands","Borderlands 2","Borderlands 3","Borderlands Pre-Sequel",""); // Caça-Arcas
     JogoCheck(n,g,"671364657520574495","Hammerwatch","Heroes of Hammerwatch","Hammerwatch 2","",""); // Herói de Hammerwatch
     JogoCheck(n,g,"671372582943195156","Payday","Payday 2","Payday 3","",""); // Ladrão de Banco
