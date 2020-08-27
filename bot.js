@@ -4,6 +4,7 @@ const client = new Discord.Client();
 client.on('message', message => {
     if (message.content === 'ping') {
        message.reply('pong!!!');
+       client.channels.get("743855267409821698").send('My Message');
     }
 });
 
