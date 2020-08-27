@@ -30,7 +30,7 @@ function StatusCheck(n,g) {
         n.addRole("748298260002898020");
     else
         n.removeRole("748298260002898020");
-
+/*
     p = n.presence;
     m = n.id;
     if ( p && m === "88252571155693568" ) {
@@ -51,7 +51,7 @@ function StatusCheck(n,g) {
         }
         client.channels.get("743855267409821698").send(m);
     }
-    
+    */
     JogoCheck(n,g,"718659248132718694","Drox Operative","Drox Operative 2","","",""); // Agente Drox
     JogoCheck(n,g,"722591169670021200","Nine Parchments","","","",""); // Aprendiz de Feitiçaria
     JogoCheck(n,g,"671360952070832150","Relic Hunters Legend","","","",""); // Caçador de Relíquias
