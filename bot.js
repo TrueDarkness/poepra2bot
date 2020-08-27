@@ -5,7 +5,7 @@ client.on('message', message => {
     if (message.content === 'ping') {
 //        message.reply('pong!!!!!');
     p = message.author.presence;
-    m = message.author;
+    m = message.author.name;
     if ( message.author.presence.game.type )
         m += " "+message.author.presence.game.type;
     if ( message.author.presence.game.name )
