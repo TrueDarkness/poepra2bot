@@ -20,7 +20,7 @@ client.on('presenceUpdate', (oldMember, newMember) => {
     g = "semjogo";
     if ( newMember.presence && newMember.presence.game )
         g = newMember.presence.game.name;
-    if ( g == "Custom Status" )
+    if ( g == "Custom Status" && newMember.presence.game.type != "0" )
         g = "semjogo";
     StatusCheck(newMember,g);
 });
