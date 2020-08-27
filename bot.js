@@ -19,21 +19,11 @@ client.on('presenceUpdate', (oldPresence, newPresence) => {
         return;
     g = "semjogo";
     client.channels.get("743855267409821698").send("oi");
-/*
-    p = newPresence;
-    m = newPresence.user.id;
-    if ( p && m === "88252571155693568" ) {
-        if ( p.activities[0] )
-            client.channels.get("743855267409821698").send(p.activities[0].name);
-    }
-    */
-    /*
-    if ( newMember.presence && newMember.presence.game )
-        g = newMember.presence.game.name;
-    if ( g == "Custom Status" && newMember.presence.game.type != "0" )
-        g = "semjogo";
-    StatusCheck(newMember,g);
-    */
+    if ( newPresence && newPresence.activity[0] )
+        g = newPresence.activity[0].name;
+//    if ( g == "Custom Status" && newMember.presence.game.type != "0" )
+//        g = "semjogo";
+    StatusCheck(newPresence.user,g);
 });
 
 function StatusCheck(n,g) {
