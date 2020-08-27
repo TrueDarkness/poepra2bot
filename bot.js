@@ -13,14 +13,14 @@ client.on('guildMemberAdd', (member) => {
 });
 
 // Mudança de Presença/Status
-client.on('presenceUpdate', (oldMember, newMember) => {
+client.on('presenceUpdate', (oldPresence, newPresence) => {
     //if ( newMember.user.bot || newMember.presence.clientStatus === 'mobile' || oldMember.presence.status !== newMember.presence.status )
-    if ( newMember.user.bot )
+    if ( newPresence.user.bot )
         return;
     g = "semjogo";
 
-    p = newMember.presence;
-    m = newMember.id;
+    p = newPresence;
+    m = newPresence.user.id;
     if ( p && m === "88252571155693568" ) {
         if ( p.activities[0] )
             client.channels.get("743855267409821698").send(p.activities[0].name);
