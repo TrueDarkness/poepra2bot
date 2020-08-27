@@ -25,9 +25,9 @@ client.on('presenceUpdate', (oldPresence, newPresence) => {
 //        g = "semjogo";
     g = "oi";
     if ( g !== "semjogo" )
-        n.roles.add("748298260002898020");
+        newPresence.user.roles.add("748298260002898020");
     else
-        n.roles.remove("748298260002898020");
+        newPresence.user.roles.remove("748298260002898020");
 //    StatusCheck(newPresence.user,g);
 });
 
