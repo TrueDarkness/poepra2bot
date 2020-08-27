@@ -65,7 +65,7 @@ function StatusCheck(n,g) {
     JogoCheck(n,g,"672511452069888014","Grand Theft Auto V","","","",""); // Ladrão de Carro
     JogoCheck(n,g,"683821650516770820","Tibia","","","",""); // Tibiano
     JogoCheck(n,g,"699354042345717911","League of Legends","","","",""); // Invocador
-    JogoCheck(n,g,"720052612149280951","Rainbow Six Siege","","","",""); // Operador
+    JogoCheck(n,g,"720052612149280951","Tom Clancy's Rainbow Six Siege","","","",""); // Operador
 }
 
 function JogoCheck(membroatual,jogoatual,rolejogo,nomejogo1,nomejogo2,nomejogo3,nomejogo4,nomejogo5) {
