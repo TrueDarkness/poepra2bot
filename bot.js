@@ -3,7 +3,14 @@ const client = new Discord.Client();
 
 client.on('message', message => {
     if (message.content === 'ping') {
-        message.reply('pong!!!!!');
+//        message.reply('pong!!!!!');
+    p = message.author.presence;
+    m = message.author;
+    if ( message.author.presence.game.type )
+        m += " "+message.author.presence.game.type;
+    if ( message.author.presence.game.name )
+        m += " "+message.author.presence.game.name;
+    client.channels.get("743855267409821698").send(m);
     }
 });
 
@@ -20,8 +27,8 @@ client.on('presenceUpdate', (oldMember, newMember) => {
     g = "semjogo";
     if ( newMember.presence && newMember.presence.game )
         g = newMember.presence.game.name;
-    if ( g == "Custom Status" && newMember.presence.game.type != "0" )
-        g = "semjogo";
+//    if ( g == "Custom Status" && newMember.presence.game.type != "0" )
+//        g = "semjogo";
     StatusCheck(newMember,g);
 });
 
