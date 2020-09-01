@@ -65,6 +65,7 @@ function StatusCheck(n,g) {
     JogoCheck(n,g,"670075744252198962","Tom Clancy's The Division","Tom Clancy's The Division 2","","",""); // Agente da Divisão
     JogoCheck(n,g,"671361855574245377","Factorio","","","",""); // Engenheiro da Automação
     JogoCheck(n,g,"671362792242282516","Satisfactory","","","",""); // Pioneiro
+    JogoCheck(n,g,"750396193137361027","Marvel's Avengers","","","",""); // Vingador
     JogoCheck(n,g,"671372183938793504","Destiny","Destiny 2","","",""); // Guardião
     JogoCheck(n,g,"671361756354052107","Monster Hunter World","","","",""); // Caçador de Monstros
     JogoCheck(n,g,"671890580690960429","Wolcen","","","",""); // Ascendido
