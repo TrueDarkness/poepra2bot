@@ -71,7 +71,7 @@ function StatusCheck(n,g) {
     JogoCheck(n,g,"705922926087503883","Diablo","Diablo 2","Diablo 3","Diablo 4",""); // Nefalem
     JogoCheck(n,g,"671363254945054720","Borderlands","Borderlands 2","Borderlands 3","Borderlands Pre-Sequel",""); // Caça-Arcas
     JogoCheck(n,g,"671364657520574495","Hammerwatch","Heroes of Hammerwatch","Hammerwatch 2","",""); // Herói de Hammerwatch
-    JogoCheck(n,g,"671372582943195156","Payday","Payday 2","Payday 3","",""); // Ladrão de Banco
+    JogoCheck(n,g,"671372582943195156","PAYDAY","PAYDAY 2","PAYDAY 3","",""); // Ladrão de Banco
     JogoCheck(n,g,"671478349016858625","Don't Starve","Don't Starve Together","","",""); // Sobrevivente Faminto
     JogoCheck(n,g,"700421649190879272","Streets of Rage 4","","","",""); // Lutador de Rua
     JogoCheck(n,g,"671478709051719710","Freelancer","","","",""); // Freelancer
