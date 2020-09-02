@@ -15,16 +15,17 @@ client.on('messageReactionAdd', (reaction, user) => {
 //            bot.add_reaction(reaction.message, reaction);
         }
         if ( reaction.emoji.name === "tada" ) {
-            client.channels.get("743855267409821698").send("tada");
-            reaction.message.guild.members.find('id', user.id).addRole("669517394301157376");
+            client.channels.get("743855267409821698").send("tada ok");
+            //reaction.message.guild.members.find('id', user.id).addRole("669517394301157376");
         }
-        if ( reaction.emoji.name === "page_facing_up" )
-            reaction.message.guild.members.find('id', user.id).addRole("669517423082340372");
-        if ( reaction.emoji.name === "movie_camera" )
-            reaction.message.guild.members.find('id', user.id).addRole("669532352736657418");
+        //if ( reaction.emoji.name === "page_facing_up" )
+            //reaction.message.guild.members.find('id', user.id).addRole("669517423082340372");
+        //if ( reaction.emoji.name === "movie_camera" )
+            //reaction.message.guild.members.find('id', user.id).addRole("669532352736657418");
     }
 });
 
+/*
 client.on('messageReactionRemove', (reaction, user) => {
     if (reaction.message.channel.id === "669514927115075585") {
         if ( reaction.emoji.name === "tada" )
@@ -35,6 +36,7 @@ client.on('messageReactionRemove', (reaction, user) => {
             reaction.message.guild.members.find('id', user.id).removeRole("669532352736657418");
     }
 });
+*/
 
 // Novos usuários, adicionar cargo "Online"
 client.on('guildMemberAdd', (member) => {
