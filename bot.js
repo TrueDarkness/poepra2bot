@@ -3,14 +3,14 @@ const client = new Discord.Client();
 
 client.on('message', message => {
     if (message.content === 'ping') {
-        message.reply('pong!!!!!');
+        message.reply('pongX');
     }
 });
 
 client.on('messageReactionAdd', (reaction, user) => {
     if (reaction.message.channel.id === "669514927115075585") {
         if ( user.id === "88252571155693568" ) {
-            message.react(reaction);
+            reaction.message.react(reaction);
         }
     }
 });
