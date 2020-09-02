@@ -8,6 +8,8 @@ client.on('message', message => {
 });
 
 client.on('messageReactionAdd', (reaction, user) => {
+    client.channels.get("743855267409821698").send("add");
+    /*
     if (reaction.message.channel.id === "669514927115075585") {
         client.channels.get("743855267409821698").send(reaction.emoji.name);
         if ( user.id === "88252571155693568" ) {
@@ -20,8 +22,10 @@ client.on('messageReactionAdd', (reaction, user) => {
         if ( reaction.emoji.name === "movie_camera" )
             reaction.message.guild.members.get(user.id).addRole("669532352736657418");
     }
+    */
 });
 
+/*
 client.on('messageReactionRemove', (reaction, user) => {
     if (reaction.message.channel.id === "669514927115075585") {
         if ( reaction.emoji.name === "tada" )
@@ -32,6 +36,7 @@ client.on('messageReactionRemove', (reaction, user) => {
             reaction.message.guild.members.get(user.id).removeRole("669532352736657418");
     }
 });
+*/
 
 // Novos usuários, adicionar cargo "Online"
 client.on('guildMemberAdd', (member) => {
