@@ -8,7 +8,6 @@ client.on('message', message => {
 });
 
 client.on('messageReactionAdd', (reaction, user) => {
-    client.channels.get("743855267409821698").send("add");
     if (reaction.message.channel.id === "669514927115075585") {
         client.channels.get("743855267409821698").send(reaction.emoji.name);
         if ( user.id === "88252571155693568" ) {
