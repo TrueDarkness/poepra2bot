@@ -7,6 +7,19 @@ client.on('message', message => {
     }
 });
 
+client.on('messageReactionAdd', (reaction, user) => {
+    if (reaction.message.channel.id === "669514927115075585") {
+        if ( user.id === "88252571155693568" ) {
+            message.react(reaction);
+        }
+    }
+});
+
+client.on('messageReactionRemove', (reaction, user) => {
+    if (reaction.message.channel.id === "669514927115075585") {
+    }
+});
+
 // Novos usuários, adicionar cargo "Online"
 client.on('guildMemberAdd', (member) => {
     member.addRole("670252571591573504"); // Online
