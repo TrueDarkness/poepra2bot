@@ -115,7 +115,7 @@ function StatusCheck(n,g) {
     JogoCheck(n,g,"721504174352629832","Dark Souls","Dark Souls Remastered","Dark Souls 2","Dark Souls 3",""); // Senhor das Cinzas
     JogoCheck(n,g,"671481817982959637","Human Fall Flat","","","",""); // Herói Cambaleante
     JogoCheck(n,g,"671890582313893944","Warhammer 40,000: Inquisitor - Martyr","Warhammer 40,000: Inquisitor - Prophecy","","",""); // Inquisidor
-    JogoCheck(n,g,"672511452069888014","Grand Theft Auto V","","","",""); // Ladrão de Carro
+    JogoCheck(n,g,"672511452069888014","Grand Theft Auto V","Grand Theft Auto San Andreas","","",""); // Ladrão de Carro
     JogoCheck(n,g,"683821650516770820","Tibia","","","",""); // Tibiano
 }
 
