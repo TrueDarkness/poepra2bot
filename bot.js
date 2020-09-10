@@ -86,7 +86,7 @@ function StatusCheck(n,g) {
     JogoCheck(n,g,"718659248132718694","Drox Operative","Drox Operative 2","","",""); // Agente Drox
     JogoCheck(n,g,"722591169670021200","Nine Parchments","","","",""); // Aprendiz de Feitiçaria
     JogoCheck(n,g,"671360952070832150","Relic Hunters Legend","","","",""); // Caçador de Relíquias
-    JogoCheck(n,g,"748228857789808833","Remnant","Remnant: From the Ashes","","",""); // Herói
+    JogoCheck(n,g,"748228857789808833","Remnant","Remnant: From the Ashes","REMNANT","",""); // Herói
     JogoCheck(n,g,"748231155953696809","Barony","","","",""); // Aventureiro
     JogoCheck(n,g,"748231857073815582","20XX","30XX","","",""); // Contratado
     JogoCheck(n,g,"748229708218499243","Torchlight","Torchlight II","Torchlight III","",""); // Aventureiro
