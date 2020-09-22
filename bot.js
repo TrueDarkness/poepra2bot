@@ -43,7 +43,6 @@ client.on('guildMemberAdd', (member) => {
 
 // Mudança de Presença/Status
 client.on('presenceUpdate', (oldMember, newMember) => {
-    //if ( newMember.user.bot || newMember.presence.clientStatus === 'mobile' || oldMember.presence.status !== newMember.presence.status )
     if ( newMember.user.bot )
         return;
     g = "semjogo";
@@ -59,28 +58,6 @@ function StatusCheck(n,g) {
         n.addRole("748298260002898020");
     else
         n.removeRole("748298260002898020");
-/*
-    p = n.presence;
-    m = n.id;
-    if ( p && m === "88252571155693568" ) {
-        m = "";
-        if ( p.activities[0] ) {
-            if ( p.activities[0].type )
-                m = m+" GT:"+p.activities[0].type;
-            if ( p.activities[0].name )
-                m = m+" GN:"+p.activities[0].name;
-            if ( p.activities[0].assets )
-                m = m+" GA:"+p.activities[0].assets;
-            if ( p.activities[0].details )
-                m = m+" GD:"+p.activities[0].details;
-            if ( p.activities[0].details )
-                m = m+" GD:"+p.activities[0].details;
-            if ( p.activities[0].url )
-                m = m+" GU:"+p.activities[0].url;
-        }
-        client.channels.get("743855267409821698").send(m);
-    }
-    */
     JogoCheck(n,g,"718659248132718694","Drox Operative","Drox Operative 2","","",""); // Agente Drox
     JogoCheck(n,g,"722591169670021200","Nine Parchments","","","",""); // Aprendiz de Feitiçaria
     JogoCheck(n,g,"671360952070832150","Relic Hunters Legend","","","",""); // Caçador de Relíquias
