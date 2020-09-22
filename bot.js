@@ -14,11 +14,10 @@ client.on('messageReactionAdd', (reaction, user) => {
 //            client.channels.get("743855267409821698").send(reaction.emoji.name);
 //            bot.add_reaction(reaction.message, reaction);
         }
-        if ( reaction.emoji.name === "🎉" ) {
+        if ( reaction.emoji.name === "🎉" )
             reaction.message.guild.members.find('id', user.id).addRole("669517394301157376");
-        }
         if ( reaction.emoji.name === "📰" )
-           /reaction.message.guild.members.find('id', user.id).addRole("669517423082340372");
+            reaction.message.guild.members.find('id', user.id).addRole("669517423082340372");
         if ( reaction.emoji.name === "🎥" )
             reaction.message.guild.members.find('id', user.id).addRole("669532352736657418");
     }
