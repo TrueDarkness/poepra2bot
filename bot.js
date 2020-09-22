@@ -23,18 +23,16 @@ client.on('messageReactionAdd', (reaction, user) => {
     }
 });
 
-/*
 client.on('messageReactionRemove', (reaction, user) => {
     if (reaction.message.channel.id === "669514927115075585") {
-        if ( reaction.emoji.name === "tada" )
+        if ( reaction.emoji.name === "🎉" )
             reaction.message.guild.members.find('id', user.id).removeRole("669517394301157376");
-        if ( reaction.emoji.name === "page_facing_up" )
+        if ( reaction.emoji.name === "📰" )
             reaction.message.guild.members.find('id', user.id).removeRole("669517423082340372");
-        if ( reaction.emoji.name === "movie_camera" )
+        if ( reaction.emoji.name === "🎥" )
             reaction.message.guild.members.find('id', user.id).removeRole("669532352736657418");
     }
 });
-*/
 
 // Novos usuários, adicionar cargo "Online"
 client.on('guildMemberAdd', (member) => {
