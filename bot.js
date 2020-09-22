@@ -92,6 +92,7 @@ function StatusCheck(n,g) {
     JogoCheck(n,g,"748229708218499243","Torchlight","Torchlight II","Torchlight III","",""); // Aventureiro
     JogoCheck(n,g,"748230116756422798","Killing Floor","Killing Floor 2","","",""); // Sobrevivente
     JogoCheck(n,g,"671361479349370890","Warframe","","","",""); // Tenno
+    JogoCheck(n,g,"757783560634761347","Serious Sam 4","","","",""); // Serious Sam
     JogoCheck(n,g,"748659755915935899","Surgeon Simulator 2","","","",""); // Cirurgião
     JogoCheck(n,g,"670075744252198962","Tom Clancy's The Division","Tom Clancy's The Division 2","","",""); // Agente da Divisão
     JogoCheck(n,g,"671361855574245377","Factorio","","","",""); // Engenheiro da Automação
