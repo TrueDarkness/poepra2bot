@@ -7,6 +7,8 @@ client.on('message', message => {
     }
 });
 
+// https://stackoverflow.com/questions/49619688/reaction-emoji-name-returns-a-unicode-string-how-to-check-if-something-matches
+
 client.on('messageReactionAdd', (reaction, user) => {
     if (reaction.message.channel.id === "669514927115075585") {
         if ( user.id === "88252571155693568" ) {
