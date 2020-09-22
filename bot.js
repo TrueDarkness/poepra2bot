@@ -15,13 +15,12 @@ client.on('messageReactionAdd', (reaction, user) => {
 //            bot.add_reaction(reaction.message, reaction);
         }
         if ( reaction.emoji.name === "🎉" ) {
-            client.channels.get("743855267409821698").send("tada ok");
-            //reaction.message.guild.members.find('id', user.id).addRole("669517394301157376");
+            reaction.message.guild.members.find('id', user.id).addRole("669517394301157376");
         }
-        //if ( reaction.emoji.name === "page_facing_up" )
-            //reaction.message.guild.members.find('id', user.id).addRole("669517423082340372");
-        //if ( reaction.emoji.name === "movie_camera" )
-            //reaction.message.guild.members.find('id', user.id).addRole("669532352736657418");
+        if ( reaction.emoji.name === "📰" )
+           /reaction.message.guild.members.find('id', user.id).addRole("669517423082340372");
+        if ( reaction.emoji.name === "🎥" )
+            reaction.message.guild.members.find('id', user.id).addRole("669532352736657418");
     }
 });
 
