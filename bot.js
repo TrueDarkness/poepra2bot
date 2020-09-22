@@ -14,7 +14,7 @@ client.on('messageReactionAdd', (reaction, user) => {
             client.channels.get("743855267409821698").send(reaction.emoji.name);
 //            bot.add_reaction(reaction.message, reaction);
         }
-        if ( reaction.emoji.name === "tada" ) {
+        if ( reaction.emoji.name === ":tada:" ) {
             client.channels.get("743855267409821698").send("tada ok");
             //reaction.message.guild.members.find('id', user.id).addRole("669517394301157376");
         }
