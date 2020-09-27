@@ -94,6 +94,7 @@ function StatusCheck(n,g) {
     JogoCheck(n,g,"671890582313893944","Warhammer 40,000: Inquisitor - Martyr","Warhammer 40,000: Inquisitor - Prophecy","","",""); // Inquisidor
     JogoCheck(n,g,"672511452069888014","Grand Theft Auto V","Grand Theft Auto San Andreas","","",""); // Ladrão de Carro
     JogoCheck(n,g,"683821650516770820","Tibia","","","",""); // Tibiano
+    JogoCheck(n,g,"759863565804634204","Among Us","","","",""); // Impostor
 }
 
 function JogoCheck(membroatual,jogoatual,rolejogo,nomejogo1,nomejogo2,nomejogo3,nomejogo4,nomejogo5) {
