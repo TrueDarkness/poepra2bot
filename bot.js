@@ -100,6 +100,7 @@ function StatusCheck(n,g) {
     JogoCheck(n,g,"683821650516770820","Tibia","","","",""); // Tibiano
     JogoCheck(n,g,"761659133677666365","ROBLOX","","","",""); // Robloxiano
     JogoCheck(n,g,"759863565804634204","Among Us","","","",""); // Impostor
+    JogoCheck(n,g,"761664688459087872","League of Legends","","","",""); // Invocador
 }
 
 function JogoCheck(membroatual,jogoatual,rolejogo,nomejogo1,nomejogo2,nomejogo3,nomejogo4,nomejogo5) {
