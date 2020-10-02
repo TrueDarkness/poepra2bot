@@ -98,6 +98,7 @@ function StatusCheck(n,g) {
     JogoCheck(n,g,"759904624088973313","Ghost Recon Breakpoint","Ghost Recon Wildlands","","",""); // Ghost
     JogoCheck(n,g,"761643224048599100","Genshin Impact","","","",""); // Viajante
     JogoCheck(n,g,"683821650516770820","Tibia","","","",""); // Tibiano
+    JogoCheck(n,g,"761659133677666365","ROBLOX","","","",""); // Robloxiano
     JogoCheck(n,g,"759863565804634204","Among Us","","","",""); // Impostor
 }
 
