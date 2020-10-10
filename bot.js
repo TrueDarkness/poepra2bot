@@ -58,9 +58,10 @@ function StatusCheck(n,g) {
         n.addRole("748298260002898020");
     else
         n.removeRole("748298260002898020");
+    JogoCheck(n,g,"671360952070832150","Relic Hunters Legend","","","",""); // Caçador de Relíquias
     JogoCheck(n,g,"718659248132718694","Drox Operative","Drox Operative 2","","",""); // Agente Drox
     JogoCheck(n,g,"722591169670021200","Nine Parchments","","","",""); // Aprendiz de Feitiçaria
-    JogoCheck(n,g,"671360952070832150","Relic Hunters Legend","","","",""); // Caçador de Relíquias
+    JogoCheck(n,g,"764343943026049074","9 Monkeys of Shaolin","","","",""); // Monge Shaolin
     JogoCheck(n,g,"759953322420469800","Blightbound","","","",""); // Herói
     JogoCheck(n,g,"759953330138513418","Darksburg","","","",""); // Sobrevivente
     JogoCheck(n,g,"748228857789808833","Remnant","Remnant: From the Ashes","REMNANT","",""); // Herói
