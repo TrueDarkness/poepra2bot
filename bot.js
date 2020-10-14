@@ -49,7 +49,9 @@ client.on('presenceUpdate', (oldMember, newMember) => {
     g = "semjogo";
     if ( newMember.presence && newMember.presence.game )
         g = newMember.presence.game.name;
-    client.channels.get("743855267409821698").send(g);
+        if ( newMember.presence.game.type === 1 )
+            g = "streaming";
+    }
     if ( g == "Custom Status" || g == "Spotify" )
         g = "semjogo";
     StatusCheck(newMember,g);
