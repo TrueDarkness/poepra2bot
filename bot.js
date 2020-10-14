@@ -3,7 +3,8 @@ const client = new Discord.Client();
 
 client.on('message', message => {
     if (message.content === 'ping') {
-        message.reply('pongY');
+        //message.reply('pongY');
+        message.reply(message.guild.members.find('id',287675149031833601).presence.game.name);
     }
 });
 
