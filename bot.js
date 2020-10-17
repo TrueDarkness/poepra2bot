@@ -1,10 +1,18 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
+forbidenWords = ["https://www.twitch.tv/1limite", "lerolero"]
+
 client.on('message', message => {
     if (message.content === 'ping') {
         message.reply('pongY');
         //message.reply(message.guild.members.find('id',287675149031833601).presence.game.name);
+    }
+    for (var i = 0; i < forbidenWords.length; i++) {
+        if (message.content.includes(forbidenWords[i])) {
+            message.delete(1)
+            break;
+        }
     }
 });
 
