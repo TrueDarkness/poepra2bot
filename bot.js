@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-forbidenWords = ["twitch.tv", "asdjkhjk"]
+forbidenWords = ["twitch.tv", "discord"]
 
 client.on('message', message => {
     if (message.content === 'ping') {
