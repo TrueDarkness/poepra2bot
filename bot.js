@@ -8,6 +8,9 @@ client.on('message', message => {
         message.reply('pongY');
         //message.reply(message.guild.members.find('id',287675149031833601).presence.game.name);
     }
+    if (message.content.includes("!pp2") && message.author.id === "88252571155693568") {
+        message.reply('oi');
+    }
     for (var i = 0; i < forbidenWords.length; i++) {
         if (message.content.includes(forbidenWords[i])) {
             message.delete(1)
