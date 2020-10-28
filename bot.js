@@ -61,19 +61,24 @@ client.on('presenceUpdate', (oldMember, newMember) => {
     g = "semjogo";
     if ( newMember.presence && newMember.presence.game ) {
         g = newMember.presence.game.name;
-//        if ( newMember.presence.game.type === 1 )
-//            g = "streaming";
+        s = 1;
+        if ( newMember.presence.game.streaming )
+            s = 2;
     }
     if ( g == "Custom Status" || g == "Spotify" )
         g = "semjogo";
-    StatusCheck(newMember,g);
+    StatusCheck(newMember,g,s);
 });
 
-function StatusCheck(n,g) {
+function StatusCheck(n,g,s) {
     if ( g !== "semjogo" )
         n.addRole("748298260002898020");
     else
         n.removeRole("748298260002898020");
+    if ( s == 2 )
+        n.addRole("770811294008737803");
+    else
+        n.removeRole("770811294008737803");
     JogoCheck(n,g,"671360952070832150","Relic Hunters Legend","","","",""); // Caçador de Relíquias
     JogoCheck(n,g,"718659248132718694","Drox Operative","Drox Operative 2","","",""); // Agente Drox
     JogoCheck(n,g,"722591169670021200","Nine Parchments","","","",""); // Aprendiz de Feitiçaria
