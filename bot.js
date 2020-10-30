@@ -64,7 +64,7 @@ client.on('presenceUpdate', (oldMember, newMember) => {
         if ( g == "Custom Status" || g == "Spotify" )
             g = "semjogo";
         if ( oldMember.presence && oldMember.presence.game != newMember.presence.game || !oldMember.presence || !oldMember.presence.game )
-            client.channels.get("771531251693781022").send(newMember.user.username + " começou a jogar "+newMember.presence.game);
+            client.channels.get("771531251693781022").send(newMember.user.username + " começou a jogar "+newMember.presence.game.name);
         s = 1;
         if ( newMember.presence.game.streaming )
             s = 2;
