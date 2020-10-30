@@ -132,9 +132,9 @@ function StatusCheck(n,g,s) {
 }
 
 function JogoCheck(membroatual,jogoatual,rolejogo,nomejogo1,nomejogo2,nomejogo3,nomejogo4,nomejogo5) {
-    if ( jogoatual === nomejogo1 || jogoatual === nomejogo2 || jogoatual === nomejogo3 || jogoatual === nomejogo4 || jogoatual === nomejogo5 )
-        membroatual.addRole(rolejogo);
-    else
+//    if ( jogoatual === nomejogo1 || jogoatual === nomejogo2 || jogoatual === nomejogo3 || jogoatual === nomejogo4 || jogoatual === nomejogo5 )
+//        membroatual.addRole(rolejogo);
+//    else
         membroatual.removeRole(rolejogo);
 }
 
