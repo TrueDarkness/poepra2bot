@@ -58,14 +58,14 @@ client.on('guildMemberAdd', (member) => {
 client.on('presenceUpdate', (oldMember, newMember) => {
     if ( newMember.user.bot )
         return;
+    s = 1;
     g = "semjogo";
     if ( newMember.presence && newMember.presence.game ) {
         g = newMember.presence.game.name;
         if ( g == "Custom Status" || g == "Spotify" )
             g = "semjogo";
         if ( g != "semjogo" && oldMember.presence && oldMember.presence.game != newMember.presence.game || !oldMember.presence || !oldMember.presence.game )
-            client.channels.get("771531251693781022").send(newMember.user.username + " começou a jogar "+newMember.presence.game.name);
-        s = 1;
+            client.channels.get("771531251693781022").send(newMember.user.username + " começou a jogar "+newMember.presence.game.name+" "+newMember.presence.game.streaming);
         if ( newMember.presence.game.streaming )
             s = 2;
     }
