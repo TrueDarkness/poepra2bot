@@ -66,9 +66,9 @@ client.on('presenceUpdate', (oldMember, newMember) => {
             g = "semjogo";
         if ( g != "semjogo" && oldMember.presence && oldMember.presence.game != newMember.presence.game || !oldMember.presence || !oldMember.presence.game )
             client.channels.get("771531251693781022").send(newMember.user.username + " começou a jogar "+newMember.presence.game.name);
-        if ( newMember.presence.game.streaming ) {
+        if ( newMember.presence.game.streaming || newMember.presence.game.url ) {
             s = 2;
-            client.channels.get("771531251693781022").send(newMember.user.username + " começou a transmitir "+newMember.presence.game.name);
+            client.channels.get("771531251693781022").send(newMember.user.username + " começou a transmitir "+newMember.presence.game.name+": "+newMember.presence.game.url);
         }
     }
     if ( g == "Custom Status" || g == "Spotify" )
