@@ -96,6 +96,7 @@ function StatusCheck(n,g,s) {
     JogoCheck(n,g,"748229708218499243","Torchlight","Torchlight II","Torchlight III","",""); // Aventureiro
     JogoCheck(n,g,"748230116756422798","Killing Floor","Killing Floor 2","","",""); // Sobrevivente
     JogoCheck(n,g,"671361479349370890","Warframe","","","",""); // Tenno
+    JogoCheck(n,g,"772971176459894804","State of Decay","State of Decay 2","","",""); // Sobrevivente
     JogoCheck(n,g,"759789856288931850","Spelunky","Spelunky 2","","",""); // Espeleólogo
     JogoCheck(n,g,"764140689150967818","Robo Quest","Roboquest","","",""); // Guardião
     JogoCheck(n,g,"757783560634761347","Serious Sam 4","Serious Sam 3","Serious Sam 2","Serious Sam",""); // Serious Sam
