@@ -5,7 +5,7 @@ forbidenWords = ["twitch.tv", "discord.com", "discord.gg"]
 
 client.on('message', message => {
     if (message.content === 'ping') {
-        message.reply('pongY');
+        message.reply('pong');
         //message.reply(message.guild.members.find('id',287675149031833601).presence.game.name);
     }
     if (message.content.includes("!pp2") && message.author.id === "88252571155693568") {
@@ -74,12 +74,10 @@ client.on('presenceUpdate', (oldMember, newMember) => {
             o = "semjogo";
             if (oldMember.presence && oldMember.presence.game )
                 o = oldMember.presence.game;
-            if ( o != p )
-                client.channels.get("743855267409821698").send(newMember.user.username + " - " + newMember.presence.game.name + " - " + oldMember.presence.game.name);
+            if ( o == p )
+                client.channels.get("743855267409821698").send(newMember.user.username + " - " + o + " - " + p);
         }
     }
-    if ( g == "Custom Status" || g == "Spotify" )
-        g = "semjogo";
     StatusCheck(newMember,g,s);
 });
 
