@@ -74,7 +74,7 @@ client.on('presenceUpdate', (oldMember, newMember) => {
             o = "semjogo";
             if (oldMember.presence && oldMember.presence.game )
                 o = oldMember.presence.game;
-            if ( o == p )
+            if ( o.toString() != p.toString() )
                 client.channels.get("743855267409821698").send(newMember.user.username + " - " + o + " - " + p);
         }
     }
