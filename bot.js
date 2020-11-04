@@ -69,8 +69,13 @@ client.on('presenceUpdate', (oldMember, newMember) => {
 //        if ( g != "semjogo" && ((oldMember.presence && oldMember.presence.game && oldMember.presence.game != newMember.presence.game) || !oldMember.presence || !oldMember.presence.game) ) {
 //            client.channels.get("743855267409821698").send(newMember.user.username + " começou a jogar "+newMember.presence.game.name);
 //        }
-        if ( g != "semjogo" && oldMember.presence.game !== newMember.presence.game) {
-            client.channels.get("743855267409821698").send(newMember.user.username + " - " + newMember.presence.game.name + " - " + oldMember.presence.game.name);
+        if ( g != "semjogo") {
+            p = newMember.presence.game.name;
+            o = "semjogo";
+            if (oldMember.presence && oldMember.presence.game )
+                o = oldMember.presence.game;
+            if ( o != p )
+                client.channels.get("743855267409821698").send(newMember.user.username + " - " + newMember.presence.game.name + " - " + oldMember.presence.game.name);
         }
     }
     if ( g == "Custom Status" || g == "Spotify" )
