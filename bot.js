@@ -77,6 +77,8 @@ client.on('presenceUpdate', (oldMember, newMember) => {
         }
         */
     }
+    if ( g == "Custom Status" || g == "Spotify" || g == "Twitch" )
+        g = "semjogo";
     StatusCheck(newMember,g,s);
 });
 
