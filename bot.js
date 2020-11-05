@@ -62,7 +62,8 @@ client.on('presenceUpdate', (oldMember, newMember) => {
     g = "semjogo";
     if ( newMember.presence && newMember.presence.game ) {
         g = newMember.presence.game.name;
-        if ( g == "Twitch" || newMember.presence.game.streaming || newMember.presence.game.type == 1 )
+        //if ( g == "Twitch" || newMember.presence.game.streaming || newMember.presence.game.type == 1 )
+        if ( g == "Twitch" )
             s = 2;
         if ( g == "Custom Status" || g == "Spotify" || g == "Twitch" )
             g = "semjogo";
