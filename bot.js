@@ -68,7 +68,7 @@ client.on('presenceUpdate', (oldMember, newMember) => {
             g = "semjogo";
         if ( g != "semjogo") {
             o = "semjogo";
-            if (oldMember.presence && oldMember.presence.game)
+            if ( oldMember.presence && oldMember.presence.game )
                 o = oldMember.presence.game.name;
             if ( o != g )
                 client.channels.get("773764984923750453").send(newMember.user.username + " começou a jogar " + g);
