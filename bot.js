@@ -75,7 +75,7 @@ client.on('presenceUpdate', (oldMember, newMember) => {
             if (oldMember.presence && oldMember.presence.game )
                 o = oldMember.presence.game.name;
             if ( o != p )
-                client.channels.get("743855267409821698").send(newMember.user.username + " - " + o + " - " + p);
+                client.channels.get("773764984923750453").send(newMember.user.username + " começou a jogar " + g);
         }
     }
     StatusCheck(newMember,g,s);
