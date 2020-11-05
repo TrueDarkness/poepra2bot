@@ -66,6 +66,7 @@ client.on('presenceUpdate', (oldMember, newMember) => {
             s = 2;
         if ( g == "Custom Status" || g == "Spotify" || g == "Twitch" )
             g = "semjogo";
+        /*
         if ( g != "semjogo") {
             o = "semjogo";
             if ( oldMember.presence && oldMember.presence.game )
@@ -73,6 +74,7 @@ client.on('presenceUpdate', (oldMember, newMember) => {
             if ( o != g )
                 client.channels.get("773764984923750453").send(newMember.user.username + " começou a jogar " + g);
         }
+        */
     }
     StatusCheck(newMember,g,s);
 });
