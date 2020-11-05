@@ -5,7 +5,7 @@ forbidenWords = ["twitch.tv", "discord.com", "discord.gg"]
 
 client.on('message', message => {
     if (message.content === 'ping') {
-        message.reply('pong!');
+        message.reply('pongY');
         //message.reply(message.guild.members.find('id',287675149031833601).presence.game.name);
     }
     if (message.content.includes("!pp2") && message.author.id === "88252571155693568") {
@@ -62,22 +62,15 @@ client.on('presenceUpdate', (oldMember, newMember) => {
     g = "semjogo";
     if ( newMember.presence && newMember.presence.game ) {
         g = newMember.presence.game.name;
-        //if ( g == "Twitch" || newMember.presence.game.streaming || newMember.presence.game.type == 1 )
         if ( g == "Twitch" )
             s = 2;
         if ( g == "Custom Status" || g == "Spotify" || g == "Twitch" )
             g = "semjogo";
-        /*
-        if ( g != "semjogo") {
-            o = "semjogo";
-            if ( oldMember.presence && oldMember.presence.game )
-                o = oldMember.presence.game.name;
-            if ( o != g )
-                client.channels.get("773764984923750453").send(newMember.user.username + " começou a jogar " + g);
+        if ( g != "semjogo" && oldMember.presence && oldMember.presence.game != newMember.presence.game || !oldMember.presence || !oldMember.presence.game ) {
+            //client.channels.get("771531251693781022").send(newMember.user.username + " começou a jogar "+newMember.presence.game.name);
         }
-        */
     }
-    if ( g == "Custom Status" || g == "Spotify" || g == "Twitch" )
+    if ( g == "Custom Status" || g == "Spotify" )
         g = "semjogo";
     StatusCheck(newMember,g,s);
 });
