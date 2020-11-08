@@ -76,7 +76,7 @@ client.on('presenceUpdate', (oldMember, newMember) => {
         StatusCheck(newMember,g,s);
         if ( g != "semjogo" ) {
             //client.channels.get("773764984923750453").send(newMember.user.username + " começou a jogar " + g);
-            client.channels.get("773764984923750453").send("@" + newMember.user.username + " começou a jogar " + g,{"allowedMentions": { "users" : []}})
+            client.channels.get("773764984923750453").send(newMember.user.toString() + " começou a jogar " + g,{"allowedMentions": { "users" : []}})
         }
     }
 });
