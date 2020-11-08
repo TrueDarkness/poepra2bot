@@ -76,7 +76,25 @@ client.on('presenceUpdate', (oldMember, newMember) => {
         StatusCheck(newMember,g,s);
         if ( g != "semjogo" ) {
             //client.channels.get("773764984923750453").send(newMember.user.username + " começou a jogar " + g);
-            client.channels.get("773764984923750453").send(newMember.user.toString() + " começou a jogar " + g,{"allowedMentions": { "users" : []}})
+            //client.channels.get("773764984923750453").send(newMember.user.toString() + " começou a jogar " + g,{"allowedMentions": { "users" : []}})
+            jogandoembed = new Discord.MessageEmbed()
+            .setColor('#0099ff')
+            .setTitle('Some title')
+            .setURL('https://discord.js.org/')
+            .setAuthor('Some name', 'https://i.imgur.com/wSTFkRM.png', 'https://discord.js.org')
+            .setDescription('Some description here')
+            .setThumbnail('https://i.imgur.com/wSTFkRM.png')
+            .addFields(
+                { name: 'Regular field title', value: 'Some value here' },
+                { name: '\u200B', value: '\u200B' },
+                { name: 'Inline field title', value: 'Some value here', inline: true },
+                { name: 'Inline field title', value: 'Some value here', inline: true },
+            )
+            .addField('Inline field title', 'Some value here', true)
+            .setImage('https://i.imgur.com/wSTFkRM.png')
+            .setTimestamp()
+            .setFooter('Some footer text here', 'https://i.imgur.com/wSTFkRM.png');
+            client.channels.get("773764984923750453").send(jogandoembed);
         }
     }
 });
