@@ -77,7 +77,7 @@ client.on('presenceUpdate', (oldMember, newMember) => {
         if ( g != "semjogo" ) {
             //client.channels.get("773764984923750453").send(newMember.user.username + " começou a jogar " + g);
             //client.channels.get("773764984923750453").send(newMember.user.toString() + " começou a jogar " + g,{"allowedMentions": { "users" : []}})
-            jogandoembed = new Discord.MessageEmbed()
+            const jogandoembed = new Discord.MessageEmbed()
             .setColor('#0099ff')
             .setTitle('Some title')
             .setURL('https://discord.js.org/')
