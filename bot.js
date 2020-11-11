@@ -136,6 +136,7 @@ function StatusCheck(n,g,s) {
     JogoCheck(n,g,"761659133677666365","ROBLOX","","","",""); // Robloxiano
     JogoCheck(n,g,"759863565804634204","Among Us","","","",""); // Impostor
     JogoCheck(n,g,"773567396975869963","Fall Guys: Ultimate Knockout","","","",""); // Jujuba
+    JogoCheck(n,g,"776093889324122112","Apex Legends","","","",""); // Lenda
     JogoCheck(n,g,"761664688459087872","League of Legends","","","",""); // Invocador
     JogoCheck(n,g,"761665162872225804","VALORANT","","","",""); // Agente
 }
