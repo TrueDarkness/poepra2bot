@@ -143,7 +143,7 @@ function StatusCheck(n,g,s) {
 }
 
 function JogoCheck(membroatual,jogoatual,rolejogo,nomejogo1,nomejogo2,nomejogo3,nomejogo4,nomejogo5) {
-    if ( jogoatual === nomejogo1 || jogoatual === nomejogo2 || jogoatual === nomejogo3 || jogoatual === nomejogo4 || jogoatual === nomejogo5 )
+    if ( jogoatual.toLowerCase() === nomejogo1.toLowerCase() || jogoatual.toLowerCase() === nomejogo2.toLowerCase() || jogoatual.toLowerCase() === nomejogo3.toLowerCase() || jogoatual.toLowerCase() === nomejogo4.toLowerCase() || jogoatual.toLowerCase() === nomejogo5.toLowerCase() )
         membroatual.addRole(rolejogo);
     else
         membroatual.removeRole(rolejogo);
