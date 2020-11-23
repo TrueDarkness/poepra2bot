@@ -1,7 +1,8 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-forbidenWords = ["twitch.tv", "discord.com", "discord.gg"]
+forbidenGames = ["Custom Status", "Spotify", "Twitch", "Guilded"];
+forbidenWords = ["twitch.tv", "discord.com", "discord.gg"];
 
 client.on('message', message => {
     if (message.content === 'ping') {
@@ -62,15 +63,23 @@ client.on('presenceUpdate', (oldMember, newMember) => {
     g = "semjogo";
     if ( oldMember.presence && oldMember.presence.game ) {
         o = oldMember.presence.game.name;
-        if ( o == "Custom Status" || o == "Spotify" || o == "Twitch" )
-            o = "semjogo";
+        for (var i = 0; i < forbidenGames.length; i++) {
+            if ( o == forbidenGames[i] ) {
+                o = "semjogo";
+                break;
+            }
+        }
     }
     if ( newMember.presence && newMember.presence.game ) {
         g = newMember.presence.game.name;
         if ( g == "Twitch" || newMember.presence.game.streaming || newMember.presence.game.type == 1 )
             s = 2;
-        if ( g == "Custom Status" || g == "Spotify" || g == "Twitch" )
-            g = "semjogo";
+        for (var i = 0; i < forbidenGames.length; i++) {
+            if ( g == forbidenGames[i] ) {
+                g = "semjogo";
+                break;
+            }
+        }
     }
     if ( o != g || s == 2 )
         StatusCheck(newMember,g,s);
