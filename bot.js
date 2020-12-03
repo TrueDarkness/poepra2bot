@@ -72,7 +72,7 @@ client.on('presenceUpdate', (oldMember, newMember) => {
     }
     if ( newMember.presence && newMember.presence.game ) {
         g = newMember.presence.game.name;
-        if ( g == "Twitch" || newMember.presence.game.streaming || newMember.presence.game.type == 1 )
+        if ( g == "Twitch" )//|| newMember.presence.game.streaming || newMember.presence.game.type == 1 )
             s = 2;
         for (var i = 0; i < forbidenGames.length; i++) {
             if ( g == forbidenGames[i] ) {
@@ -81,7 +81,7 @@ client.on('presenceUpdate', (oldMember, newMember) => {
             }
         }
     }
-    if ( o != g || s == 2 )
+    if ( o != g ) //|| s == 2 )
         StatusCheck(newMember,g,s);
     if ( o != g && g != "semjogo" ) {
 //        client.channels.get("743855267409821698").send("**" + newMember.user.username + "** começou a jogar **" + g + "**");
