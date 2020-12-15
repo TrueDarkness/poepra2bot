@@ -122,7 +122,7 @@ function StatusCheck(n,g,s) {
     JogoCheck(n,g,"750396193137361027","Marvel's Avengers","","","",""); // Vingador
     JogoCheck(n,g,"671372183938793504","Destiny","Destiny 2","","",""); // Guardião
     JogoCheck(n,g,"671361756354052107","MONSTER HUNTER: WORLD","","","",""); // Caçador de Monstros
-    JogoCheck(n,g,"671890580690960429","Wolcen","","","",""); // Ascendido
+    JogoCheck(n,g,"671890580690960429","Wolcen: Lord of Mayhem","","","",""); // Ascendido
     JogoCheck(n,g,"705922926087503883","Diablo","Diablo 2","Diablo III","Diablo 4",""); // Nefalem
     JogoCheck(n,g,"671363254945054720","Borderlands","Borderlands 2","Borderlands 3","Borderlands Pre-Sequel",""); // Caça-Arcas
     JogoCheck(n,g,"671364657520574495","Hammerwatch","Heroes of Hammerwatch","Hammerwatch 2","",""); // Herói de Hammerwatch
