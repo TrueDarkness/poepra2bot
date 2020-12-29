@@ -72,8 +72,8 @@ client.on('presenceUpdate', (oldMember, newMember) => {
     }
     if ( newMember.presence && newMember.presence.game ) {
         g = newMember.presence.game.name;
-        if ( g == "Twitch" )//|| newMember.presence.game.streaming || newMember.presence.game.type == 1 )
-            s = 2;
+//        if ( g == "Twitch" )//|| newMember.presence.game.streaming || newMember.presence.game.type == 1 )
+//            s = 2;
         for (var i = 0; i < forbidenGames.length; i++) {
             if ( g == forbidenGames[i] ) {
                 g = "semjogo";
