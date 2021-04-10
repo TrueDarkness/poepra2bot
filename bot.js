@@ -101,6 +101,7 @@ function StatusCheck(n,g,s) {
     JogoCheck(n,g,"671360952070832150","Relic Hunters Legend","","","",""); // Caçador de Relíquias
     JogoCheck(n,g,"718659248132718694","Drox Operative","Drox Operative 2","","",""); // Agente Drox
     JogoCheck(n,g,"722591169670021200","Nine Parchments","","","",""); // Aprendiz de Feitiçaria
+    JogoCheck(n,g,"830455180998213663","First Feudal","","","",""); // Senhor Feudal
     JogoCheck(n,g,"823969945317539840","Magic: Legends","","","",""); // Planeswalker
     JogoCheck(n,g,"814863875567779930","OUTRIDERS","OUTRIDERS Demo","","",""); // Outrider
     JogoCheck(n,g,"811992130057928714","Valheim","","","",""); // Viking
