@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
+
 forbidenGames = ["Custom Status", "Spotify", "Twitch", "Guilded", "Cyberpunk 2077"];
 forbidenWords = ["twitch.tv", "discord.com", "discord.gg"];
 
