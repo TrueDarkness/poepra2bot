@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const client = new Discord.Client();
+const client = new Discord.Client(); 
 
 
 forbidenGames = ["Custom Status", "Spotify", "Twitch", "Guilded", "Cyberpunk 2077", "Google Chrome"];
@@ -190,4 +190,5 @@ client.on('raw', packet => {
 });
 
 client.login(process.env.BOT_TOKEN);//BOT_TOKEN is the Client Secret 
+
 
