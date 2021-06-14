@@ -60,6 +60,7 @@ client.on('guildMemberAdd', (member) => {
 client.on('presenceUpdate', (oldMember, newMember) => {
     if ( newMember.user.bot )
         return;
+    newMember.addRole("670252571591573504"); // Online 
     s = 1;
     o = "semjogo";
     g = "semjogo";
