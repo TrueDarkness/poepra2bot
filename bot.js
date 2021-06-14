@@ -52,7 +52,7 @@ client.on('messageReactionRemove', (reaction, user) => {
 
 // Novos usuários, adicionar cargo "Online"
 client.on('guildMemberAdd', (member) => {
-    member.addRole("670252571591573504"); // Online
+    member.addRole("670252571591573504"); // Online 
 });
 
 
