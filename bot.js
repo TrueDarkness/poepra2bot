@@ -1,5 +1,5 @@
 const Discord = require('discord.js'); 
-const client = new Discord.Client();
+const client = new Discord.Client(); 
 
 
 forbidenGames = ["Custom Status", "Spotify", "Twitch", "Guilded", "Cyberpunk 2077", "Google Chrome"];
