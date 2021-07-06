@@ -142,7 +142,7 @@ function StatusCheck(n,g,s) {
     JogoCheck(n,g,"671481433377996826","Stardew Valley","","","",""); // Fazendeiro
     JogoCheck(n,g,"671481632296927245","Eurotruck Simulator","","","",""); // Caminhoneiro
     JogoCheck(n,g,"671481819627126784","Path of Exile","Path of Exile 2","","",""); // Exilado
-    JogoCheck(n,g,"721504174352629832","Dark Souls","DARK SOULS™: REMASTERED","DARK SOULS™ II","DARK SOULS II: Scholar of the First Sin","DARK SOULS™ III"); // Senhor das Cinzas
+    JogoCheck(n,g,"721504174352629832","Dark Souls","DARK SOULS™: REMASTERED","DARK SOULS™ II","DARK SOULS II: Scholar of the First Sin","DARK SOULS III"); // Senhor das Cinzas
     JogoCheck(n,g,"671481817982959637","Human Fall Flat","","","",""); // Herói Cambaleante
     JogoCheck(n,g,"671890582313893944","Warhammer 40,000: Inquisitor - Martyr","Warhammer 40,000: Inquisitor - Prophecy","","",""); // Inquisidor
     JogoCheck(n,g,"672511452069888014","Grand Theft Auto V","Grand Theft Auto San Andreas","","",""); // Ladrão de Carro
