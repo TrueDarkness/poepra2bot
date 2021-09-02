@@ -101,6 +101,7 @@ function StatusCheck(n,g,s) {
         n.addRole("770811294008737803");
     else
         n.removeRole("770811294008737803");
+    /*
     JogoCheck(n,g,"671360952070832150","Relic Hunters Legend","","","",""); // Caçador de Relíquias
     JogoCheck(n,g,"718659248132718694","Drox Operative","Drox Operative 2","","",""); // Agente Drox
     JogoCheck(n,g,"722591169670021200","Nine Parchments","","","",""); // Aprendiz de Feitiçaria
@@ -156,6 +157,7 @@ function StatusCheck(n,g,s) {
     JogoCheck(n,g,"776093889324122112","Apex Legends","","","",""); // Lenda
     JogoCheck(n,g,"761664688459087872","League of Legends","","","",""); // Invocador
     JogoCheck(n,g,"761665162872225804","VALORANT","","","",""); // Agente
+    */
 }
 
 function JogoCheck(membroatual,jogoatual,rolejogo,nomejogo1,nomejogo2,nomejogo3,nomejogo4,nomejogo5) {
