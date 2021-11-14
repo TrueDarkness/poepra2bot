@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();   
 
 
-forbidenGames = ["Custom Status", "Spotify", "Twitch", "Guilded", "Cyberpunk 2077", "Google Chrome"];
+forbidenGames = ["Custom Status", "Spotify", "Twitch", "Guilded", "Cyberpunk 2077", "Google Chrome", "Mir4G[1]"];
 forbidenWords = ["twitch.tv", "discord.com", "discord.gg", "@PS Updates", "@Switch Updates", "@XB Updates","@everyone"];
 
 client.on('message', message => {
