@@ -101,6 +101,7 @@ function StatusCheck(n,g,s) {
         n.addRole("770811294008737803");
     else
         n.removeRole("770811294008737803");
+    JogoCheck(n,g,"671361479349370890","Warframe","","","",""); // Tenno
     /*
     JogoCheck(n,g,"671360952070832150","Relic Hunters Legend","","","",""); // Caçador de Relíquias
     JogoCheck(n,g,"718659248132718694","Drox Operative","Drox Operative 2","","",""); // Agente Drox
