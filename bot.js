@@ -19,7 +19,7 @@ client.on('message', message => {
     }
     for (var i = 0; i < forbidenWords.length; i++) {
         if (message.content.includes(forbidenWords[i]) && message.author.id !== "740204208006889503") {
-            client.channels.get("743855267409821698").send("**Exclusão: **" + message.author.username + " (" + message.author.id +"): " + message.content);
+            client.channels.get("743855267409821698").send("**Exclusão: **" + message.author.username + " *(" + message.author.id +")*: " + message.content);
             message.delete(1)
             break;
         }
