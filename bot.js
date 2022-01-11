@@ -18,7 +18,7 @@ client.on('message', message => {
         process.exit(1);
     }
     for (var i = 0; i < forbidenWords.length; i++) {
-        if (message.content.includes(forbidenWords[i])) {
+        if (message.content.includes(forbidenWords[i]) && message.author.id !== "740204208006889503") {
             message.delete(1)
             break;
         }
