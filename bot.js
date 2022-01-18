@@ -26,6 +26,7 @@ client.on('message', message => {
     }
 });
 
+/*
 client.on('messageUpdate', (oldMessage, newMessage) => {
     for (var i = 0; i < forbidenWords.length; i++) {
         if (newMessage.content.includes(forbidenWords[i]) && newMessage.author.id !== "740204208006889503") {
@@ -35,6 +36,7 @@ client.on('messageUpdate', (oldMessage, newMessage) => {
         }
     }
 }
+*/
 
 // https://stackoverflow.com/questions/49619688/reaction-emoji-name-returns-a-unicode-string-how-to-check-if-something-matches
 client.on('messageReactionAdd', (reaction, user) => {
