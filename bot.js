@@ -26,6 +26,16 @@ client.on('message', message => {
     }
 });
 
+client.on('messageUpdate', (oldMessage, newMessage) => {
+    for (var i = 0; i < forbidenWords.length; i++) {
+        if (newMessage.content.includes(forbidenWords[i]) && newMessage.author.id !== "740204208006889503") {
+            client.channels.get("743855267409821698").send("**Exclusão: **" + newMessage.author.username + " *(" + newMessage.author.id +")*: " + newMessage.content);
+            newMessage.delete(1)
+            break;
+        }
+    }
+}
+
 // https://stackoverflow.com/questions/49619688/reaction-emoji-name-returns-a-unicode-string-how-to-check-if-something-matches
 client.on('messageReactionAdd', (reaction, user) => {
     if (reaction.message.channel.id === "669514927115075585") {
