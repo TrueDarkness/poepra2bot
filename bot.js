@@ -14,10 +14,6 @@ client.on('message', message => {
         message.channel.send(message.content.replace("!pp2",""));
         message.delete(1);
     }
-    if (message.content.includes("!restart") && message.author.id === "88252571155693568") {
-        message.delete(1);
-        process.exit(1);
-    }
     for (var i = 0; i < forbidenWords.length; i++) {
         if (message.content.includes(forbidenWords[i]) && message.author.id !== "740204208006889503") {
             client.channels.get("743855267409821698").send("**Exclusão: **" + message.author.username + " *(" + message.author.id +")*: " + message.content);
