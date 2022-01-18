@@ -6,7 +6,8 @@ forbidenWords = ["twitch.tv", "discord.com", "discord.gg", "@PS Updates", "@Swit
 
 client.on('message', message => {
     if (message.content === 'ping') {
-        message.reply('pongY');
+        message.reply('pong');
+        message.delete(1);
         //message.reply(message.guild.members.find('id',287675149031833601).presence.game.name);
     }
     if (message.content.includes("!pp2") && message.author.id === "88252571155693568") {
