@@ -115,6 +115,7 @@ function StatusCheck(n,g,s) {
     else
         n.removeRole("770811294008737803");
     JogoCheck(n,g,"671361479349370890","Warframe","","","",""); // Tenno
+    JogoCheck(n,g,"761664688459087872","League of Legends","","","",""); // Invocador
     /*
     JogoCheck(n,g,"671360952070832150","Relic Hunters Legend","","","",""); // Caçador de Relíquias
     JogoCheck(n,g,"718659248132718694","Drox Operative","Drox Operative 2","","",""); // Agente Drox
@@ -169,7 +170,6 @@ function StatusCheck(n,g,s) {
     JogoCheck(n,g,"759863565804634204","Among Us","","","",""); // Impostor
     JogoCheck(n,g,"773567396975869963","Fall Guys: Ultimate Knockout","","","",""); // Jujuba
     JogoCheck(n,g,"776093889324122112","Apex Legends","","","",""); // Lenda
-    JogoCheck(n,g,"761664688459087872","League of Legends","","","",""); // Invocador
     JogoCheck(n,g,"761665162872225804","VALORANT","","","",""); // Agente
     */
 }
