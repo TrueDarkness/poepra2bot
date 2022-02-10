@@ -117,7 +117,6 @@ function StatusCheck(n,g,s) {
     JogoCheck(n,g,"671361479349370890","Warframe","","","",""); // Tenno
     JogoCheck(n,g,"761664688459087872","League of Legends","","","",""); // Invocador
     JogoCheck(n,g,"941174090834780250","Lost Ark","","","",""); // Herói de Arkesia
-    /*
     JogoCheck(n,g,"671360952070832150","Relic Hunters Legend","","","",""); // Caçador de Relíquias
     JogoCheck(n,g,"718659248132718694","Drox Operative","Drox Operative 2","","",""); // Agente Drox
     JogoCheck(n,g,"722591169670021200","Nine Parchments","","","",""); // Aprendiz de Feitiçaria
@@ -134,7 +133,6 @@ function StatusCheck(n,g,s) {
     JogoCheck(n,g,"748231857073815582","20XX","30XX","","",""); // Contratado
     JogoCheck(n,g,"748229708218499243","Torchlight","Torchlight II","Torchlight III","",""); // Aventureiro
     JogoCheck(n,g,"748230116756422798","Killing Floor","Killing Floor 2","","",""); // Sobrevivente
-    JogoCheck(n,g,"671361479349370890","Warframe","","","",""); // Tenno
     JogoCheck(n,g,"772971176459894804","State of Decay","State of Decay 2","","",""); // Sobrevivente
     JogoCheck(n,g,"759789856288931850","Spelunky","Spelunky 2","","",""); // Espeleólogo
     JogoCheck(n,g,"764140689150967818","Robo Quest","Roboquest","","",""); // Guardião
@@ -172,7 +170,6 @@ function StatusCheck(n,g,s) {
     JogoCheck(n,g,"773567396975869963","Fall Guys: Ultimate Knockout","","","",""); // Jujuba
     JogoCheck(n,g,"776093889324122112","Apex Legends","","","",""); // Lenda
     JogoCheck(n,g,"761665162872225804","VALORANT","","","",""); // Agente
-    */
 }
 
 function JogoCheck(membroatual,jogoatual,rolejogo,nomejogo1,nomejogo2,nomejogo3,nomejogo4,nomejogo5) {
