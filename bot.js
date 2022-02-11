@@ -152,7 +152,7 @@ function StatusCheck(n,g,s) {
     JogoCheck(n,g,"671478349016858625","Don't Starve","Don't Starve Together","","",""); // Sobrevivente Faminto
     JogoCheck(n,g,"700421649190879272","Streets of Rage 4","","","",""); // Lutador de Rua
     JogoCheck(n,g,"671478709051719710","Freelancer","","","",""); // Freelancer
-    JogoCheck(n,g,"671479313308188693","Overcooked","Overcooked 2","","",""); // Chef de Cozinha
+    JogoCheck(n,g,"671479313308188693","Overcooked","Overcooked! 2","","",""); // Chef de Cozinha
     JogoCheck(n,g,"671480101787140106","Out of Space","","","",""); // Faxineiro Espacial
     JogoCheck(n,g,"671481433377996826","Stardew Valley","","","",""); // Fazendeiro
     JogoCheck(n,g,"671481632296927245","Eurotruck Simulator","","","",""); // Caminhoneiro
