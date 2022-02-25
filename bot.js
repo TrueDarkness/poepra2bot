@@ -118,6 +118,7 @@ function StatusCheck(n,g,s) {
     JogoCheck(n,g,"761664688459087872","League of Legends","","","",""); // Invocador
     JogoCheck(n,g,"941174090834780250","Lost Ark","","","",""); // Herói de Arkesia
     JogoCheck(n,g,"671360952070832150","Relic Hunters Legend","","","",""); // Caçador de Relíquias
+    JogoCheck(n,g,"946841834435518547","ELDEN RING","","","",""); // Maculado
     JogoCheck(n,g,"718659248132718694","Drox Operative","Drox Operative 2","","",""); // Agente Drox
     JogoCheck(n,g,"722591169670021200","Nine Parchments","","","",""); // Aprendiz de Feitiçaria
     JogoCheck(n,g,"830455180998213663","First Feudal","","","",""); // Senhor Feudal
