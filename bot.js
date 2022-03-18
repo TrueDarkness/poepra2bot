@@ -3,6 +3,7 @@ const client = new Discord.Client();
  
 forbidenGames = ["Custom Status", "Spotify", "Twitch", "Guilded", "Cyberpunk 2077", "Google Chrome", "Mir4G[1]", "Visual Studio Code"];
 forbidenWords = ["twitch.tv", "discord.com", "discord.gg", "@PS Updates", "@Switch Updates", "@XB Updates","@everyone"];
+bannedGames = ["Mir4G[1]"];
 
 client.on('message', message => {
     if (message.content === 'ping') {
@@ -96,6 +97,12 @@ client.on('presenceUpdate', (oldMember, newMember) => {
                 break;
             }
         }
+        for (var i = 0; i < bannedGames.length; i++) {
+            if ( g == bannedGames[i] ) {
+                g = "banjogo";
+                break;
+            }
+        }
     }
     if ( o != g ) //|| s == 2 )
         StatusCheck(newMember,g,s);
@@ -106,7 +113,7 @@ client.on('presenceUpdate', (oldMember, newMember) => {
 });
 
 function StatusCheck(n,g,s) {
-    if ( g !== "semjogo" )
+    if ( g !== "semjogo" && g !== "banjogo" )
         n.addRole("748298260002898020");
     else
         n.removeRole("748298260002898020");
@@ -114,6 +121,8 @@ function StatusCheck(n,g,s) {
         n.addRole("770811294008737803");
     else
         n.removeRole("770811294008737803");
+    if ( g == "banjogo" )
+        n.removeRole("670252571591573504");
     JogoCheck(n,g,"671361479349370890","Warframe","","","",""); // Tenno
     JogoCheck(n,g,"761664688459087872","League of Legends","","","",""); // Invocador
     JogoCheck(n,g,"941174090834780250","Lost Ark","","","",""); // Herói de Arkesia
