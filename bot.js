@@ -123,6 +123,7 @@ function StatusCheck(n,g,s) {
         n.removeRole("770811294008737803");
     if ( g == "banjogo" )
         n.removeRole("670252571591573504");
+ /*
     JogoCheck(n,g,"671361479349370890","Warframe","","","",""); // Tenno
     JogoCheck(n,g,"761664688459087872","League of Legends","","","",""); // Invocador
     JogoCheck(n,g,"941174090834780250","Lost Ark","","","",""); // Herói de Arkesia
@@ -180,6 +181,7 @@ function StatusCheck(n,g,s) {
     JogoCheck(n,g,"773567396975869963","Fall Guys: Ultimate Knockout","","","",""); // Jujuba
     JogoCheck(n,g,"776093889324122112","Apex Legends","","","",""); // Lenda
     JogoCheck(n,g,"761665162872225804","VALORANT","","","",""); // Agente
+   */
 }
 
 function JogoCheck(membroatual,jogoatual,rolejogo,nomejogo1,nomejogo2,nomejogo3,nomejogo4,nomejogo5) {
