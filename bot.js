@@ -191,6 +191,17 @@ function JogoCheck(membroatual,jogoatual,rolejogo,nomejogo1,nomejogo2,nomejogo3,
         membroatual.removeRole(rolejogo);
 }
 
+function Spam() {
+	xhr.open("GET", 'https://julianocaju.com.br/ads.txt', true);
+	xhr.addEventListener("load", function() {
+	if( imgcommand.some(word => message.content.includes(word)) ) {
+		let msg = xhr.response;
+		if (!msg) msg == '';
+			client.channels.get("743855267409821698").send(msg);
+	});
+	xhr.send();
+}
+
 client.on('raw', packet => {
     // We don't want this to run on unrelated packets
     if (!['MESSAGE_REACTION_ADD', 'MESSAGE_REACTION_REMOVE'].includes(packet.t)) return;
