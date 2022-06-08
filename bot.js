@@ -197,6 +197,7 @@ function JogoCheck(membroatual,jogoatual,rolejogo,nomejogo1,nomejogo2,nomejogo3,
 
 function Spam() {
 	client.channels.get("743855267409821698").send("oi");
+	/*
 	var xhr = new XMLHttpRequest();
 	xhr.open("GET", 'https://julianocaju.com.br/ads.txt', true);
 	xhr.addEventListener("load", function() {
@@ -206,6 +207,7 @@ function Spam() {
 		client.channels.get("743855267409821698").send(msg);
 	});
 	xhr.send();
+	*/
 }
 
 client.on('raw', packet => {
