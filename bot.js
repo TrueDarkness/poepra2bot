@@ -11,10 +11,12 @@ client.on('message', message => {
         message.delete(1);
         //message.reply(message.guild.members.find('id',287675149031833601).presence.game.name);
     }
+	/*
     if (message.content.includes("!spam") && message.author.id === "88252571155693568") {
         message.delete(1);
         Spam();
     }
+    */
     if (message.content.includes("!pp2") && message.author.id === "88252571155693568") {
         message.channel.send(message.content.replace("!pp2",""));
         message.delete(1);
@@ -195,6 +197,7 @@ function JogoCheck(membroatual,jogoatual,rolejogo,nomejogo1,nomejogo2,nomejogo3,
         membroatual.removeRole(rolejogo);
 }
 
+/*
 function Spam() {
 	xhr.open("GET", 'https://julianocaju.com.br/ads.txt', true);
 	xhr.addEventListener("load", function() {
@@ -205,6 +208,7 @@ function Spam() {
 	});
 	xhr.send();
 }
+*/
 
 client.on('raw', packet => {
     // We don't want this to run on unrelated packets
