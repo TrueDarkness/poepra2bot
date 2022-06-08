@@ -197,7 +197,7 @@ function JogoCheck(membroatual,jogoatual,rolejogo,nomejogo1,nomejogo2,nomejogo3,
 
 function Spam() {
 	client.channels.get("743855267409821698").send("oi");
-	
+	/*
 	var xhr = new XMLHttpRequest();
 	xhr.open("GET", 'https://www.googleapis.com/customsearch/v1?key=AIzaSyBZEJ2dYHtnsn4DJLq6QzXJo4umiHlam5M&cx=017268685753925817424:6rgr_rfrawg&q=dog&searchType=image&fileType=jpg&imgSize=xlarge&alt=json', true);
 	xhr.addEventListener("load", function() {
@@ -207,7 +207,7 @@ function Spam() {
 		client.channels.get("743855267409821698").send(msg);
 	});
 	xhr.send();
-	
+	*/
 }
 
 client.on('raw', packet => {
