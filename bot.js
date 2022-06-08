@@ -11,6 +11,10 @@ client.on('message', message => {
         message.delete(1);
         //message.reply(message.guild.members.find('id',287675149031833601).presence.game.name);
     }
+    if (message.content.includes("!spam") && message.author.id === "88252571155693568") {
+        message.delete(1);
+        Spam();
+    }
     if (message.content.includes("!pp2") && message.author.id === "88252571155693568") {
         message.channel.send(message.content.replace("!pp2",""));
         message.delete(1);
