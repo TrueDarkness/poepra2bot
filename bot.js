@@ -127,11 +127,15 @@ function StatusCheck(n,g,s) {
         n.addRole("770811294008737803");
     else
         n.removeRole("770811294008737803");
-	// Hide
-    if ( g == "banjogo" )
+	// Hide / -Online
+    if ( g == "banjogo" ) {
         n.addRole("770811294008737803");
-    else
+	n.removeRole("670252571591573504");
+    }
+    else {
         n.removeRole("770811294008737803");
+	n.addRole("670252571591573504");
+    }
  /*
     JogoCheck(n,g,"671361479349370890","Warframe","","","",""); // Tenno
    */
