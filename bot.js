@@ -90,6 +90,12 @@ client.on('presenceUpdate', (oldMember, newMember) => {
                 break;
             }
         }
+        for (var i = 0; i < bannedGames.length; i++) {
+            if ( o.includes(bannedGames[i]) ) {
+                o = "banjogo";
+                break;
+            }
+        }
     }
     if ( newMember.presence && newMember.presence.game ) {
         g = newMember.presence.game.name;
@@ -119,23 +125,23 @@ client.on('presenceUpdate', (oldMember, newMember) => {
 function StatusCheck(n,g,s) {
 	// Playing
     if ( g !== "semjogo" && g !== "banjogo" )
-        n.addRole("748298260002898020");
+		n.addRole("748298260002898020");
     else
-        n.removeRole("748298260002898020");
+		n.removeRole("748298260002898020");
 	// Stream
 	if ( s == 2 )
-        n.addRole("770811294008737803");
-    else
-        n.removeRole("770811294008737803");
+		n.addRole("770811294008737803");
+	else
+		n.removeRole("770811294008737803");
 	// Hide / -Online
-    if ( g == "banjogo" ) {
-        n.addRole("770811294008737803");
-	n.removeRole("670252571591573504");
+	if ( g == "banjogo" ) {
+		n.addRole("770811294008737803");
+		n.removeRole("670252571591573504");
     }
-    else {
-        n.removeRole("770811294008737803");
-	n.addRole("670252571591573504");
-    }
+	else {
+		n.removeRole("770811294008737803");
+		n.addRole("670252571591573504");
+	}
  /*
     JogoCheck(n,g,"671361479349370890","Warframe","","","",""); // Tenno
    */
