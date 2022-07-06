@@ -124,9 +124,9 @@ client.on('presenceUpdate', (oldMember, newMember) => {
 
 function StatusCheck(n,g,s) {
 	// Playing
-    if ( g !== "semjogo" && g !== "banjogo" )
+	if ( g !== "semjogo" && g !== "banjogo" )
 		n.addRole("748298260002898020");
-    else
+	else
 		n.removeRole("748298260002898020");
 	// Stream
 	if ( s == 2 )
