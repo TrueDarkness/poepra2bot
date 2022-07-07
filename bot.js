@@ -3,7 +3,7 @@ const client = new Discord.Client();
  
 forbidenGames = ["Custom Status", "Spotify", "Twitch", "Guilded", "Cyberpunk 2077", "Google Chrome", "Mir4G[1]", "Visual Studio Code"];
 forbidenWords = ["twitch.tv", "discord.com", "discord.gg", "@PS Updates", "@Switch Updates", "@XB Updates","@everyone"];
-bannedGames = ["Mir4G"];
+bannedGames = ["Mir4"];
  
 client.on('message', message => {
     if (message.content === 'ping') {
@@ -17,6 +17,12 @@ client.on('message', message => {
     }
     if (message.content.includes("!pp2") && message.author.id === "88252571155693568") {
         message.channel.send(message.content.replace("!pp2",""));
+        message.delete(1);
+    }
+    if (message.content.includes("!test") && message.author.id === "88252571155693568") {
+		tmpmsg = message.content.replace("!test","");
+		tmpcheck = tmpmsg.includes("Mir4")
+        message.channel.send(tmpcheck);
         message.delete(1);
     }
     for (var i = 0; i < forbidenWords.length; i++) {
